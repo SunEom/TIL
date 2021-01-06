@@ -21,6 +21,14 @@ const fitParam = {
 };
 
 model.fit(cause, result, fitParam).then(async () => {
-  const predictedValues = await model.predict(cause).array();
-  console.log(predictedValues);
+  const weights = model.getWeights();
+
+  // 가중치와 편향 값을 배열 형태로 받는다.
+  const weightArray = await weights[0].array();
+  const biasArray = await weights[1].array();
+
+  //가중치와 편향 값을 확인한다.
+  const weight = weightArray[0][0];
+  const bias = biasArray[0];
+  console.log(weight, bias);
 });
