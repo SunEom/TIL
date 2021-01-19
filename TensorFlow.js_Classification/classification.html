@@ -30,7 +30,8 @@
 
         _history = [];
         const fitParam = {
-          epochs: 1000,
+          // when epochs 100 -> 1000, can cause overfitting
+          epochs: 100,
           callbacks: {
             onEpochEnd: function (epoch, logs) {
               console.log('epoch', epoch, logs, 'RMSE=>', Math.sqrt(logs.loss));
