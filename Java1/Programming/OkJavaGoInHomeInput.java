@@ -8,10 +8,11 @@ import org.opentutorials.iot.Security;
 
 public class OkJavaGoInHomeInput {
 
+	// parameter
 	public static void main(String[] args) {
 		
-		String id = JOptionPane.showInputDialog("Enter a ID");
-		String bright = JOptionPane.showInputDialog("Enter a bright level");
+		String id = args[0];
+		String bright = args[1];
 		
 		//Elevator call
 		Elevator myElevator = new Elevator(id);
