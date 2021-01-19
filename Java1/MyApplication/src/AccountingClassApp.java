@@ -54,15 +54,6 @@ public class AccountingClassApp {
 		Accounting.valueOfSupply = 10000.0;
 		Accounting.vatRate = 0.1;
 		Accounting.expenseRate = 0.3;
-		double vat = Accounting.getVAT();
-		
-		double total = Accounting.getTotal();
-		double expense = Accounting.getExpense();
-		double income = Accounting.getIncome();
-		
-		double dividend1 = Accounting.getDividend1();
-		double dividend2 = Accounting.getDividend2();
-		double dividend3 = Accounting.getDividend3();
 		
 		Accounting.print();
 		
