@@ -1,37 +1,42 @@
+class Print {
+	
+	public static String delimiter="";
+
+	public static void A() {
+		System.out.println(delimiter);
+		System.out.println("A");
+		System.out.println("A");
+	}
+
+	public static void B() {
+		System.out.println(delimiter);
+		System.out.println("B");
+		System.out.println("B");
+	}
+	
+}
 
 public class MyOOP {
 
 	public static void main(String[] args) {
 
-		 delimiter = "----";
+		Print.delimiter = "----";
 		//...
-		printA();
-		printA();
+		Print.A();
+		Print.A();
 		//...
-		printB();
-		printB();
+		Print.B();
+		Print.B();
 		
-		 delimiter = "****";
+		Print.delimiter = "****";
 		//...
-		printA();
-		printA();
+		Print.A();
+		Print.A();
 		//...
-		printB();
-		printB();
+		Print.B();
+		Print.B();
 		
-	}
-	
-	public static String delimiter="";
-
-	public static void printA() {
-		System.out.println(delimiter);
-		System.out.println("A");
-		System.out.println("A");
 	}
 
-	public static void printB() {
-		System.out.println(delimiter);
-		System.out.println("B");
-		System.out.println("B");
-	}
+
 }
