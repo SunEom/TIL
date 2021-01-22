@@ -1,5 +1,4 @@
 var express = require('express');
-var parseurl = require('parseurl');
 var session = require('express-session');
 
 var app = express();
@@ -12,7 +11,7 @@ app.use(
   })
 );
 
-app.get('/foo', function (req, res, next) {
+app.get('/', function (req, res, next) {
   res.send('Hello session');
 });
 
