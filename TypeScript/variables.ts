@@ -156,11 +156,8 @@ create(undefined);
 // create('string');
 // create(false);
 
-<<<<<<< HEAD
 // Type assertions
 
-=======
->>>>>>> 77a4b605005072e2d9e3efb0d86c380c6302c070
 let someValue: unknown = 'This is a string';
 
 let strLength: number = (someValue as string).length;
