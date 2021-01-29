@@ -1,0 +1,16 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "Learning TS!",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^4.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "prestart": "tsc"
+  },
+  "author": "Suneom <dkxl0701@gmail.com>",
+  "license": "ISC"
+}
