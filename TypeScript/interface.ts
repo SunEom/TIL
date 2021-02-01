@@ -111,4 +111,123 @@ mySearch3 = function (src, sub) {
   return result > -1;
 };
 
+// Class Types
+
+interface ClockInterface {
+  currentTime: Date;
+}
+
+class Clock implements ClockInterface {
+  currentTime: Date = new Date();
+  constructor(h: number, m: number) {}
+}
+
+interface ClockInterface2 {
+  currentTime: Date;
+  setTime(d: Date): void;
+}
+
+class Clock2 implements ClockInterface2 {
+  currentTime: Date = new Date();
+  setTime(d: Date) {
+    this.currentTime = d;
+  }
+  constructor(h: number, m: number) {}
+}
+
+/*
+Error
+// interface ClockConstructor3 {
+//   new (hour: number, minute: number);
+// }
+
+// class Clock3 implements ClockConstructor3 {
+//   currentTime: Date;
+//   constructor(h: number, m: number) {}
+// }
+*/
+
+interface ClockConstructor {
+  new (hour: number, minute: number): ClockInterface4;
+}
+
+interface ClockInterface4 {
+  tick(): void;
+}
+
+function createClock(ctor: ClockConstructor, hour: number, minute: number): ClockInterface4 {
+  return new ctor(hour, minute);
+}
+
+class DigitalClock implements ClockInterface4 {
+  constructor(h: number, m: number) {}
+  tick() {
+    console.log('beep beep');
+  }
+}
+
+class AnalogClock implements ClockInterface4 {
+  constructor(h: number, m: number) {}
+  tick() {
+    console.log('tick tock');
+  }
+}
+
+let digital = createClock(DigitalClock, 12, 17);
+let analog = createClock(AnalogClock, 7, 32);
+
+//Another ex
+
+interface ClockConstructor2 {
+  new (hour: number, minute: number): ClockInterface5;
+}
+
+interface ClockInterface5 {
+  tick(): void;
+}
+
+const Clock3: ClockConstructor2 = class Clock3 implements ClockInterface5 {
+  constructor(h: number, m: number) {}
+  tick() {
+    console.log('beep beep');
+  }
+};
+
+let clock = new Clock3(12, 17);
+clock.tick();
+
+//Extending Interfaces
+
+interface Shape {
+  color: string;
+}
+
+interface Square extends Shape {
+  sideLength: number;
+}
+
+let square = {} as Square;
+square.color = 'blue';
+square.sideLength = 10;
+
+//Hybrid Types
+
+interface Counter {
+  (start: number): string;
+  interval: number;
+  reset(): void;
+}
+
+function getCounter(): Counter {
+  let counter = function (start: number) {} as Counter;
+  counter.interval = 123;
+  counter.reset = function () {};
+  return counter;
+}
+
+let c = getCounter();
+c(10);
+c.reset();
+c.interval = 5.0;
+
 export {};
