@@ -9,7 +9,7 @@ const AddNumber = ({ onClick }) => {
       <input
         type="button"
         value="+"
-        onClick={function () {
+        onClick={() => {
           onClick(size);
         }}
       />

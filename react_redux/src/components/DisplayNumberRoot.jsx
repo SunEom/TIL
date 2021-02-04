@@ -1,11 +1,11 @@
 import React from 'react';
-import DisplayNumber from './DisplayNumber';
+import DisplayNumber from '../containers/DisplayNumber';
 
-const DisplayNumberRoot = ({ number }) => {
+const DisplayNumberRoot = () => {
   return (
     <div>
       <h1>Display Number Root</h1>
-      <DisplayNumber number={number} />
+      <DisplayNumber />
     </div>
   );
 };
