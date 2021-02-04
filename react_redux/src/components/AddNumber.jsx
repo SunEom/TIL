@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const AddNumber = () => {
+const AddNumber = ({ onClick }) => {
+  const [size, setSize] = useState(1);
+
   return (
     <div>
       <h1>Add Number</h1>
-      <input type="button" value="+" />
-      <input type="text" value="0" />
+      <input
+        type="button"
+        value="+"
+        onClick={function () {
+          onClick(size);
+        }}
+      />
+      <input
+        type="text"
+        value={size}
+        onChange={(e) => {
+          setSize(+e.target.value);
+        }}
+      />
     </div>
   );
 };

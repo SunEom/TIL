@@ -1,10 +1,10 @@
 import React from 'react';
 
-const DisplayNumber = () => {
+const DisplayNumber = ({ number }) => {
   return (
     <div>
       <h1>Display Number</h1>
-      <input type="text" value="0" readOnly />
+      <input type="text" value={number} readOnly />
     </div>
   );
 };
