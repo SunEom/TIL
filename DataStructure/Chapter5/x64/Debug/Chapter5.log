@@ -1,4 +1,23 @@
-﻿  challenge.c
-C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\challenge.c(65,18): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\challenge.c(89): warning C4700: 초기화되지 않은 'service_customer2' 지역 변수를 사용했습니다.
+﻿  Exercise12.c
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\Exercise12.c(86,18): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\Exercise12.c(123,13): warning C4473: 'printf': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\Exercise12.c(123,13): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 1개 필요하지만 0개가 제공되었습니다.
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\Exercise12.c(123,13): message : 누락된 variadic 인수 1이(가) 서식 문자열 '%d'에 필요합니다.
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\Exercise12.c(129,13): warning C4473: 'printf': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\Exercise12.c(129,13): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 1개 필요하지만 0개가 제공되었습니다.
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\Exercise12.c(129,13): message : 누락된 variadic 인수 1이(가) 서식 문자열 '%d'에 필요합니다.
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\Exercise12.c(147,13): warning C4473: 'printf': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\Exercise12.c(147,13): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 1개 필요하지만 0개가 제공되었습니다.
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\Exercise12.c(147,13): message : 누락된 variadic 인수 1이(가) 서식 문자열 '%d'에 필요합니다.
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\Exercise12.c(153,13): warning C4473: 'printf': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\Exercise12.c(153,13): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 1개 필요하지만 0개가 제공되었습니다.
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\Exercise12.c(153,13): message : 누락된 variadic 인수 1이(가) 서식 문자열 '%d'에 필요합니다.
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\Exercise12.c(171,13): warning C4473: 'printf': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\Exercise12.c(171,13): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 1개 필요하지만 0개가 제공되었습니다.
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\Exercise12.c(171,13): message : 누락된 variadic 인수 1이(가) 서식 문자열 '%d'에 필요합니다.
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\Exercise12.c(177,13): warning C4473: 'printf': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\Exercise12.c(177,13): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 1개 필요하지만 0개가 제공되었습니다.
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\Exercise12.c(177,13): message : 누락된 variadic 인수 1이(가) 서식 문자열 '%d'에 필요합니다.
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\Exercise12.c(67): warning C4715: 'max_num': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\Exercise12.c(73): warning C4715: 'min_num': 모든 제어 경로에서 값을 반환하지는 않습니다.
   Chapter5.vcxproj -> C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter5\x64\Debug\Chapter5.exe
