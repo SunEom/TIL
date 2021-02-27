@@ -1,2 +1,3 @@
-﻿  Quiz183.c
+﻿  quiz199.c
+C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter6\quiz199.c(71,29): warning C4020: 'delete_first': 실제 매개 변수가 너무 많습니다.
   Chapter6.vcxproj -> C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter6\Debug\Chapter6.exe

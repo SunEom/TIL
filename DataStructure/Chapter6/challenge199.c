@@ -38,8 +38,7 @@ ListNode* delete_first(ListNode* head) {
 }
 
 ListNode* delete(ListNode* head, ListNode* pre) {
-	ListNode* removed;
-	removed = pre->link;
+	ListNode* removed = pre->link;
 	pre->link = removed->link;
 	free(removed);
 	return head;
@@ -47,21 +46,33 @@ ListNode* delete(ListNode* head, ListNode* pre) {
 
 void print_list(ListNode* head) {
 	for (ListNode* p = head; p != NULL; p = p->link)
-		printf("%d -> ", p->data);
+		printf("%d->", p->data);
 	printf("NULL \n");
+}
+
+element get_entry(ListNode* head, int index) {
+	ListNode* result = head;
+	for (int i = 0; i < index; i++) {
+		if (result == NULL) return NULL;
+		result = result->link;
+	}
+	return result->data;
 }
 
 int main(void) {
 	ListNode* head = NULL;
 
-	for (int i = 0; i < 5; i++) {
+	for (int i = 0; i < 5; i++)
 		head = insert_first(head, i);
-		print_list(head);
-	}
 
-	for (int i = 0; i < 5; i++) {
+	print_list(head);
+
+	for(int i=0; i<5;i++)
+		printf("[%d] : %d\n",i, get_entry(head, i));
+
+	for (int i = 0; i < 5; i++)
 		head = delete_first(head);
-		print_list(head);
-	}
+	print_list(head);
 	return 0;
+
 }

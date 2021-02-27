@@ -7,7 +7,7 @@ typedef struct ListNode {
 	struct ListNode* link;
 }ListNode;
 
-void error(char* message) {
+void error(char *message){
 	fprintf(stderr, "%s\n", message);
 	exit(1);
 }
@@ -47,21 +47,30 @@ ListNode* delete(ListNode* head, ListNode* pre) {
 
 void print_list(ListNode* head) {
 	for (ListNode* p = head; p != NULL; p = p->link)
-		printf("%d -> ", p->data);
+		printf("%d->", p->data);
 	printf("NULL \n");
+}
+
+int get_length(ListNode* head) {
+	int length = 0;
+	for (ListNode* p = head; p != NULL; p = p->link)
+		length++;
+	return length;
 }
 
 int main(void) {
 	ListNode* head = NULL;
-
+	
 	for (int i = 0; i < 5; i++) {
 		head = insert_first(head, i);
 		print_list(head);
+		printf("Length : %d\n\n", get_length(head));
 	}
 
 	for (int i = 0; i < 5; i++) {
-		head = delete_first(head);
+		head = delete_first(head, i);
 		print_list(head);
+		printf("Length : %d\n\n", get_length(head));
 	}
 	return 0;
 }
