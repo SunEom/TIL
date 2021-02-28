@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="lab4.c">
+    <ClCompile Include="polinomial.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
