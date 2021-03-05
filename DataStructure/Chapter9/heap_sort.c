@@ -1,12 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 #define MAX_ELEMENT 200
 
 typedef struct {
 	int key;
 }element;
-
 typedef struct {
 	element heap[MAX_ELEMENT];
 	int heap_size;
@@ -23,8 +21,7 @@ void init(HeapType* h) {
 void insert_max_heap(HeapType* h, element item) {
 	int i;
 	i = ++h->heap_size;
-
-	while (i != 1 && item.key > h->heap[i].key) {
+	while (i != 1 && item.key > h->heap[i / 2].key) {
 		h->heap[i] = h->heap[i / 2];
 		i /= 2;
 	}
@@ -34,7 +31,7 @@ void insert_max_heap(HeapType* h, element item) {
 element delete_max_heap(HeapType* h) {
 	element item, temp;
 	int parent, child;
-
+	
 	item = h->heap[1];
 	temp = h->heap[h->heap_size--];
 	parent = 1;
@@ -42,33 +39,36 @@ element delete_max_heap(HeapType* h) {
 	while (child <= h->heap_size) {
 		if (child < h->heap_size && h->heap[child].key < h->heap[child + 1].key)
 			child++;
-		if (temp.key >= h->heap[child].key) break;
+		if (temp.key > h->heap[child].key) break;
 		h->heap[parent] = h->heap[child];
 		parent = child;
 		child *= 2;
 	}
 	h->heap[parent] = temp;
-	return item;
+	return  item;
 }
 
-int main(void) {
-	element e1 = { 10 }, e2 = { 5 }, e3 = { 30 };
-	element e4, e5, e6;
+void heap_sort(element a[], int n) {
+	int i;
 	HeapType* heap;
 	heap = create();
 	init(heap);
 
-	insert_max_heap(heap, e1);
-	insert_max_heap(heap, e2);
-	insert_max_heap(heap, e3);
+	for (i = 0; i < n; i++)
+		insert_max_heap(heap, a[i]);
 
-	e4 = delete_max_heap(heap);
-	printf("< %d > ", e4.key);
-	e5 = delete_max_heap(heap);
-	printf("< %d > ", e5.key);
-	e6 = delete_max_heap(heap);
-	printf("< %d > ", e6.key);
-
+	for (int i = n-1; i >=0; i--)
+		a[i] = delete_max_heap(heap);
+	
 	free(heap);
+}
+
+#define SIZE 8
+int main(void) {
+	element list[SIZE] = { 23,56,11,9,56,99,27,34 };
+	heap_sort(list, SIZE);
+	for (int i = 0; i < SIZE; i++)
+		printf("%d ", list[i]);
+	printf("\n");
 	return 0;
 }

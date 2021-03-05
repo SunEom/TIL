@@ -20,18 +20,18 @@ void init(HeapType* h) {
 	h->heap_size = 0;
 }
 
-void insert_max_heap(HeapType* h, element item) {
+void insert_min_heap(HeapType* h, element item) {
 	int i;
 	i = ++h->heap_size;
 
-	while (i != 1 && item.key > h->heap[i].key) {
+	while (i != 1 && item.key < h->heap[i / 2].key) {
 		h->heap[i] = h->heap[i / 2];
 		i /= 2;
 	}
 	h->heap[i] = item;
 }
 
-element delete_max_heap(HeapType* h) {
+element delete_min_heap(HeapType* h) {
 	element item, temp;
 	int parent, child;
 
@@ -40,9 +40,9 @@ element delete_max_heap(HeapType* h) {
 	parent = 1;
 	child = 2;
 	while (child <= h->heap_size) {
-		if (child < h->heap_size && h->heap[child].key < h->heap[child + 1].key)
+		if (child < h->heap_size && h->heap[child].key > h->heap[child + 1].key)
 			child++;
-		if (temp.key >= h->heap[child].key) break;
+		if (temp.key < h->heap[child].key) break;
 		h->heap[parent] = h->heap[child];
 		parent = child;
 		child *= 2;
@@ -51,24 +51,28 @@ element delete_max_heap(HeapType* h) {
 	return item;
 }
 
-int main(void) {
-	element e1 = { 10 }, e2 = { 5 }, e3 = { 30 };
-	element e4, e5, e6;
+void heap_sort(element a[], int n) {
+	int i;
 	HeapType* heap;
 	heap = create();
 	init(heap);
+	
+	for (i = 0; i < n; i++)
+		insert_min_heap(heap, a[i]);
 
-	insert_max_heap(heap, e1);
-	insert_max_heap(heap, e2);
-	insert_max_heap(heap, e3);
-
-	e4 = delete_max_heap(heap);
-	printf("< %d > ", e4.key);
-	e5 = delete_max_heap(heap);
-	printf("< %d > ", e5.key);
-	e6 = delete_max_heap(heap);
-	printf("< %d > ", e6.key);
+	for (i = 0; i < n; i++)
+		a[i] = delete_min_heap(heap);
 
 	free(heap);
+}
+
+#define SIZE 8
+
+int main(void) {
+	element list[SIZE] = { 23,56,11,9,56,99,27,34 };
+	heap_sort(list, SIZE);
+	for (int i = 0; i < SIZE; i++)
+		printf("%d ", list[i]);
+	printf("\n");
 	return 0;
 }
