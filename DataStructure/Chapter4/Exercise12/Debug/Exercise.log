@@ -1,8 +1,0 @@
-﻿  Exercise13.c
-C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter4\Exercise\Exercise13.c(37,6): warning C4013: 'gets'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-Exercise13.obj : error LNK2005: _init_stack이(가) Exercise12.obj에 이미 정의되어 있습니다.
-Exercise13.obj : error LNK2005: _main이(가) Exercise12.obj에 이미 정의되어 있습니다.
-Exercise13.obj : error LNK2005: _peek이(가) Exercise12.obj에 이미 정의되어 있습니다.
-Exercise13.obj : error LNK2005: _pop이(가) Exercise12.obj에 이미 정의되어 있습니다.
-Exercise13.obj : error LNK2005: _push이(가) Exercise12.obj에 이미 정의되어 있습니다.
-C:\Users\suneom\Desktop\Programming\til\DataStructure\Chapter4\Debug\Exercise.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
