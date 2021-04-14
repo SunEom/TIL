@@ -17,9 +17,4 @@
       <UniqueIdentifier>{f75f23e9-ffbe-4000-b78c-465532638cae}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Exercise12.c">
-      <Filter>소스 파일\Exerciese</Filter>
-    </ClCompile>
-  </ItemGroup>
 </Project>
