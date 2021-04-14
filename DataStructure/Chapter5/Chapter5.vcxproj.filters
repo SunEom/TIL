@@ -16,5 +16,13 @@
     <Filter Include="소스 파일\Exerciese">
       <UniqueIdentifier>{f75f23e9-ffbe-4000-b78c-465532638cae}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Example">
+      <UniqueIdentifier>{a60076ae-f4e0-466d-8ef5-11ffe7a4484f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="exercise11.c">
+      <Filter>소스 파일\Exerciese</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
