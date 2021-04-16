@@ -104,10 +104,12 @@ int main(void) {
 			add_rear(&a, (rand() % 5) + 1);
 			printf("Add task to a CPU\n");
 		}
+
 		if (rand() % 10 < 2) {
 			add_rear(&b, (rand() % 5) + 1);
 			printf("Add task to b CPU\n");
 		}
+
 		if (rand() % 10 < 2) {
 			add_rear(&c, (rand() % 5) + 1);
 			printf("Add task to c CPU\n");
