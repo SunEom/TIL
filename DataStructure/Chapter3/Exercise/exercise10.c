@@ -1,10 +1,11 @@
 #include <stdio.h>
 
-int delete (int array[], int loc) {
-	int removed = array[loc];
+
+int delete(int array[], int loc) {
+	int result = array[loc];
 	for (int i = loc; i < 9; i++)
 		array[i] = array[i + 1];
-	return removed;
+	return result;
 }
 
 int main(void) {
