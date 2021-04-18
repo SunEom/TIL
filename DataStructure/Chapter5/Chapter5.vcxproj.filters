@@ -19,10 +19,13 @@
     <Filter Include="소스 파일\Example">
       <UniqueIdentifier>{a60076ae-f4e0-466d-8ef5-11ffe7a4484f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Assignment">
+      <UniqueIdentifier>{fd89c85e-15bd-40c4-a923-f88a2dbbb1d1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="exercise12.c">
-      <Filter>소스 파일\Exerciese</Filter>
+    <ClCompile Include="in_to_post.c">
+      <Filter>소스 파일\Example</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
