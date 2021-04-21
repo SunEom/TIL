@@ -18,9 +18,6 @@
     <ClCompile Include="exercise21.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="power.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="exericse15.c">
       <Filter>소스 파일</Filter>
     </ClCompile>

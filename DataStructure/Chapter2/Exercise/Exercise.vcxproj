@@ -21,7 +21,6 @@
   <ItemGroup>
     <ClCompile Include="exercise21.c" />
     <ClCompile Include="exericse15.c" />
-    <ClCompile Include="power.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
