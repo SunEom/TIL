@@ -1,4 +1,4 @@
-package org.techtown.samplefragment;
+package org.techtown.fragment;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onFragmentChanged(int index){
-        if(index==0){
-            getSupportFragmentManager().beginTransaction().replace(R.id.container,menuFragment).commit();
+        if(index ==0){
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, menuFragment).commit();
         } else if(index ==1){
             getSupportFragmentManager().beginTransaction().replace(R.id.container, mainFragment).commit();
         }

@@ -1,4 +1,4 @@
-package org.techtown.samplefragment2;
+package org.techtown.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -13,14 +13,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 public class ListFragment extends Fragment {
-
     public static interface ImageSelectionCallback{
         public void onImageSelected(int position);
     }
 
     public ImageSelectionCallback callback;
 
-    public void onAttach(Context context){
+    @Override
+    public void onAttach(Context context) {
         super.onAttach(context);
 
         if(context instanceof ImageSelectionCallback){
@@ -31,7 +31,7 @@ public class ListFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_list, container, false);
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_list, container, false)
         Button button = rootView.findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,7 +46,7 @@ public class ListFragment extends Fragment {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(callback != null){
+                if(callback!=null){
                     callback.onImageSelected(1);
                 }
             }

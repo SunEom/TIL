@@ -1,15 +1,15 @@
-package org.techtown.samplefragment2;
+package org.techtown.fragment;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity implements ListFragment.ImageSelectionCallback {
+public class MainActivity extends AppCompatActivity {
     ListFragment listFragment;
     ViewerFragment viewerFragment;
 
-    int[] images ={R.drawable.dream01, R.drawable.dream02,R.drawable.dream03};
+    int[] images = {R.drawable.dream01, R.drawable.dream02, R.drawable.dream03};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,8 +21,7 @@ public class MainActivity extends AppCompatActivity implements ListFragment.Imag
         viewerFragment = (ViewerFragment) manager.findFragmentById(R.id.viewerFragment);
     }
 
-    @Override
-    public void onImageSelected(int position) {
+    public void onImageSelected(int position){
         viewerFragment.setImage(images[position]);
     }
 }

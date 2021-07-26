@@ -8,14 +8,14 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:name="org.techtown.samplefragment2.ListFragment"
+        android:name="org.techtown.fragment.ListFragment"
         android:id="@+id/listFragment"/>
 
     <fragment
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:name="org.techtown.samplefragment2.ViewerFragment"
+        android:name="org.techtown.fragment.ViewerFragment"
         android:id="@+id/viewerFragment"/>
 
 </LinearLayout>

@@ -1,4 +1,4 @@
-package org.techtown.samplefragment2;
+package org.techtown.fragment;
 
 import org.junit.Test;
 
