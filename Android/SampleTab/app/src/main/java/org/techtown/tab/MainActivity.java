@@ -1,4 +1,4 @@
-package org.techtown.sampletab;
+package org.techtown.tab;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +12,7 @@ import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
     Toolbar toolbar;
+
     Fragment1 fragment1;
     Fragment2 fragment2;
     Fragment3 fragment3;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         fragment2 = new Fragment2();
         fragment3 = new Fragment3();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment1).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment1).commit();
 
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.addTab(tabs.newTab().setText("통화기록"));
@@ -42,10 +43,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 int position = tab.getPosition();
-                Log.d("MainActivity","선택된 탭 : "+position);
+                Log.d("MainActivity", "선택된 탭 : " +position);
 
                 Fragment selected = null;
-                if(position == 0){
+                if(position ==0){
                     selected = fragment1;
                 } else if(position == 1){
                     selected = fragment2;
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                     selected = fragment3;
                 }
 
-                getSupportFragmentManager().beginTransaction().replace(R.id.container,selected).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.container , selected).commit();
             }
 
             @Override
@@ -66,5 +67,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        
     }
 }

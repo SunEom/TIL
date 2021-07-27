@@ -1,4 +1,4 @@
-package org.techtown.sampletab;
+package org.techtown.tab;
 
 import org.junit.Test;
 
