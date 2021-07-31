@@ -3,6 +3,7 @@ package org.techtown.recyclerview2;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -10,9 +11,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder> implements OnPeronItemClickListener{
+public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder> implements OnPersonItemClickListener{
+
     ArrayList<Person> items = new ArrayList<Person>();
-    OnPeronItemClickListener listener;
+    OnPersonItemClickListener listener;
 
     @NonNull
     @Override
@@ -23,13 +25,13 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder
         return new ViewHolder(itemView, this);
     }
 
-    public void setOnItemClickListener(OnPeronItemClickListener listener){
+    public void setOnItemClickListener(OnPersonItemClickListener listener){
         this.listener = listener;
     }
 
     @Override
     public void onItemClick(ViewHolder holder, View view, int position) {
-        if(listener != null){
+        if(listener!=null){
             listener.onItemClick(holder, view, position);
         }
     }
@@ -38,39 +40,6 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder
     public void onBindViewHolder(@NonNull PersonAdapter.ViewHolder viewHolder, int position) {
         Person item = items.get(position);
         viewHolder.setItem(item);
-    }
-
-    @Override
-    public int getItemCount() {
-        return items.size();
-    }
-
-    static class ViewHolder extends RecyclerView.ViewHolder{
-        TextView textView;
-        TextView textView2;
-
-        public ViewHolder(View itemView, final OnPeronItemClickListener listener){
-            super(itemView);
-
-            textView = itemView.findViewById(R.id.textView);
-            textView2 = itemView.findViewById(R.id.textView2);
-            
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    int position = getAdapterPosition();
-
-                    if(listener != null){
-                        listener.onItemClick(ViewHolder.this, view, position);
-                    }
-                }
-            });
-        }
-
-        public void setItem(Person item){
-            textView.setText(item.getName());
-            textView2.setText(item.getMobile());
-        }
     }
 
     public void addItem(Person item){
@@ -86,6 +55,42 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder
     }
 
     public void setItem(int position, Person item){
-        items.set(position,item);
+        items.set(position, item);
+    }
+
+    @Override
+    public int getItemCount() {
+        return items.size();
+    }
+
+    static class ViewHolder extends RecyclerView.ViewHolder{
+        TextView textView;
+        TextView textView2;
+        ImageView imageView;
+
+        public ViewHolder(View itemView, OnPersonItemClickListener listener){
+            super(itemView);
+
+            textView = itemView.findViewById(R.id.textView);
+            textView2 = itemView.findViewById(R.id.textView2);
+            imageView = itemView.findViewById(R.id.imageView);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int position = getAdapterPosition();
+
+                    if(listener != null){
+                        listener.onItemClick(ViewHolder.this, view, position);
+                    }
+                }
+            });
+        }
+
+        public void setItem(Person item){
+            imageView.setImageResource(R.drawable.ic_launcher_foreground);
+            textView.setText(item.getName());
+            textView2.setText(item.getMobile());
+        }
     }
 }

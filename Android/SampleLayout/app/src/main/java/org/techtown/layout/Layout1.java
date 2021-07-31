@@ -26,22 +26,22 @@ public class Layout1 extends LinearLayout {
 
     private void init(Context context){
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        inflater.inflate(R.layout.layout1, this ,true);
+        inflater.inflate(R.layout.layout1, this, true);
 
         imageView = findViewById(R.id.imageView);
         textView = findViewById(R.id.textView);
         textView2 = findViewById(R.id.textView2);
     }
 
-    public void setImage(int resId){
+    public void setImage(int resId) {
         imageView.setImageResource(resId);
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         textView.setText(name);
     }
 
-    public void setMobile(String mobile){
+    public void setMobile(String mobile) {
         textView2.setText(mobile);
     }
 }
