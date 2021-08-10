@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
     SQLiteDatabase database;
 
     String tableName;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String databaseName = editText.getText().toString();
-                createDataBase(databaseName);
+                createDatabase(databaseName);
             }
         });
 
@@ -48,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void createDataBase(String name){
-        println("createDatabase 호출");
+    private void createDatabase(String name){
+        println("createDatabase 호출됨");
 
         database = openOrCreateDatabase(name, MODE_PRIVATE, null);
 
@@ -57,21 +56,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void createTable(String name){
-        println("createTable 호출");
+        println("createTable 호출됨.");
 
         if(database == null){
             println("데이터베이스를 먼저 생성하세요.");
             return;
         }
 
-        database.execSQL("create table if not exists "+name+ "(" + " _id integer PRIMARY KEY autoincrement, " + " name text," +
-                " age integer, "+ "mobile text)");
+        database.execSQL("CREATE TABLE IF NOT EXISTS "+ name + "( _id integer primary key autoincrement, name text, age integer, mobile text)");
 
-        println("테이블 생성함 : "+ name);
+        println("테이블 생성함 : "+name);
     }
 
     private void insertRecord(){
         println("insertRecord 호출됨.");
+
         if(database == null){
             println("데이터베이스를 먼저 생성하세요.");
             return;
@@ -82,11 +81,12 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        database.execSQL("insert into "+tableName+ "(name, age, mobile)" +" values "+ "('John', 20, '010-1000-1000')  ");
+        database.execSQL("insert into "+ tableName + " (name, age, mobile) values ('John', 20, '010-1234-1234')");
+
         println("레코드 추가함.");
     }
 
-    public void println(String message){
-        textView.append(message+"\n");
+    public void println(String data){
+        textView.append(data+"\n");
     }
 }

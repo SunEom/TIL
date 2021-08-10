@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String databaseName = editText.getText().toString();
-                createDataBase(databaseName);
+                createDatabase(databaseName);
             }
         });
 
@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 insertRecord();
             }
         });
+
         Button button3 = findViewById(R.id.button3);
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,27 +57,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void executeQuery(){
-        println("executeQuery 실행됨");
-
-        Cursor cursor = database.rawQuery("select _id, name, age, mobile from emp", null);
-        int recordCount = cursor.getCount();
-        println("레코드 개수 : " + recordCount);
-
-        for(int i=0; i <recordCount; i++){
-            cursor.moveToNext();
-            int id = cursor.getInt(0);
-            String name = cursor.getString(1);
-            int age = cursor.getInt(2);
-            String mobile = cursor.getString(3);
-
-            println("레코드#"+i+" : "+id+", "+name+", "+age+", "+mobile);
-        }
-        cursor.close();
-    }
-
-    private void createDataBase(String name){
-        println("createDatabase 호출");
+    private void createDatabase(String name){
+        println("createDatabase 호출됨");
 
         dbHelper = new DatabaseHelper(this);
         database = dbHelper.getWritableDatabase();
@@ -85,21 +67,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void createTable(String name){
-        println("createTable 호출");
+        println("createTable 호출됨.");
 
         if(database == null){
             println("데이터베이스를 먼저 생성하세요.");
             return;
         }
 
-        database.execSQL("create table if not exists "+name+ "(" + " _id integer PRIMARY KEY autoincrement, " + " name text," +
-                " age integer, "+ "mobile text)");
+        database.execSQL("CREATE TABLE IF NOT EXISTS "+ name + "( _id integer primary key autoincrement, name text, age integer, mobile text)");
 
-        println("테이블 생성함 : "+ name);
+        println("테이블 생성함 : "+name);
     }
 
     private void insertRecord(){
         println("insertRecord 호출됨.");
+
         if(database == null){
             println("데이터베이스를 먼저 생성하세요.");
             return;
@@ -110,11 +92,30 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        database.execSQL("insert into "+tableName+ "(name, age, mobile)" +" values "+ "('John', 20, '010-1000-1000')  ");
+        database.execSQL("insert into "+ tableName + " (name, age, mobile) values ('John', 20, '010-1234-1234')");
+
         println("레코드 추가함.");
     }
 
-    public void println(String message){
-        textView.append(message+"\n");
+    private void executeQuery(){
+        println("executeQuery 호출됨");
+
+        Cursor cursor = database.rawQuery("select _id, name, age, mobile from emp", null);
+        int recordCount = cursor.getCount();
+        println("레코드 개수 : "+ recordCount);
+
+        for(int i=0;i <recordCount; i++){
+            cursor.moveToNext();
+            int id = cursor.getInt(0);
+            String name = cursor.getString(1);
+            int age = cursor.getInt(2);
+            String mobile = cursor.getString(3);
+
+            println("레코드#"+i+" : "+id+", "+ name + ", "+ age + ", "+mobile);
+        }
+        cursor.close();
+    }
+    public void println(String data){
+        textView.append(data+"\n");
     }
 }
