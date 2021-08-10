@@ -33,13 +33,17 @@ public class Fragment2 extends Fragment {
         SQLiteDatabase database = dbHelper.getReadableDatabase();
 
         Cursor cursor = database.rawQuery("select _id, title, author, description from book",null);
-        int recordCount
-        adapter.addItem(new Book("asd","qwe","12345"));
-        adapter.addItem(new Book("asd","qwe","12345"));
-        adapter.addItem(new Book("asd","qwe","12345"));
-        adapter.addItem(new Book("asd","qwe","12345"));
-        adapter.addItem(new Book("asd","qwe","12345"));
-        adapter.addItem(new Book("asd","qwe","12345"));
+        int recordCount = cursor.getCount();
+
+        for(int i=0; i<recordCount; i++){
+            cursor.moveToNext();
+            int id = cursor.getInt(0);
+            String title = cursor.getString(1);
+            String author = cursor.getString(2);
+            String description = cursor.getString(3);
+
+            adapter.addItem(new Book(id, title, author, description));
+        }
         adapter.notifyDataSetChanged();
 
         return result;

@@ -1,6 +1,7 @@
 package org.techtown.mission22;
 
 public class Book {
+    int id;
     String title;
     String author;
     String description;
@@ -17,6 +18,14 @@ public class Book {
         return author;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public void setAuthor(String author) {
         this.author = author;
     }
@@ -29,9 +38,12 @@ public class Book {
         this.description = description;
     }
 
-    public Book(String title, String author, String description) {
+
+    public Book(int id, String title, String author, String description) {
+        this.id = id;
         this.title = title;
         this.author = author;
         this.description = description;
     }
+
 }

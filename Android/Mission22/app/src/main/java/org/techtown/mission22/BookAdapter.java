@@ -61,7 +61,7 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder>{
         }
 
         public void setItem(Book item){
-            textView.setText(item.getTitle());
+            textView.setText("#"+item.getId()+" "+item.getTitle());
             textView2.setText(item.getAuthor());
         }
     }

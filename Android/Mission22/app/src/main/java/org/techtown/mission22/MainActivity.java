@@ -70,21 +70,16 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void createTable(){
-        database.execSQL("CREATE TABLE IF NOT EXISTS book(_id integer primary key autoincrement, title text, author text, description text)");
-    }
+//    private void createTable(){
+//        database.execSQL("CREATE TABLE IF NOT EXISTS book(_id integer primary key autoincrement, title text, author text, description text)");
+//    }
 
-    private void addRecord(Intent intent){
-        String title = intent.getStringExtra("title");
-        String author = intent.getStringExtra("author");
-        String description = intent.getStringExtra("description");
-        database.execSQL("insert into book(title, author, description) values('"+title+"', '"+author+"', '"+description+"')");
+//    private void addRecord(Intent intent){
+//        String title = intent.getStringExtra("title");
+//        String author = intent.getStringExtra("author");
+//        String description = intent.getStringExtra("description");
+//        database.execSQL("insert into book(title, author, description) values('"+title+"', '"+author+"', '"+description+"')");
+//
+//    }
 
-    }
-
-    @Override
-    protected void onNewIntent(Intent intent) {
-        super.onNewIntent(intent);
-        addRecord(intent);
-    }
 }
