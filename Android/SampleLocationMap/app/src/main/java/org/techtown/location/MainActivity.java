@@ -18,10 +18,14 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MainActivity extends AppCompatActivity {
 
+    MarkerOptions myLocationMarker;
     SupportMapFragment mapFragment;
     GoogleMap map;
 
@@ -36,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
             public void onMapReady(@NonNull GoogleMap googleMap) {
                 Log.d("Map","지도 준비됨");
                 map = googleMap;
+                map.setMyLocationEnabled(true);
             }
         });
 
@@ -76,6 +81,22 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void onResume(){
+        super.onResume();
+
+        if(map!= null){
+            map.setMyLocationEnabled(true);
+        }
+    }
+
+    public void onPause(){
+        super.onPause();
+
+        if(map!= null){
+            map.setMyLocationEnabled(false);
+        }
+    }
+
     class GPSListener implements LocationListener{
         @Override
         public void onLocationChanged(@NonNull Location location) {
@@ -103,6 +124,22 @@ public class MainActivity extends AppCompatActivity {
 
     private void showCurrentLocation(Double latitude, Double longitude){
         LatLng curPoint = new LatLng(latitude, longitude);
+
         map.animateCamera(CameraUpdateFactory.newLatLngZoom(curPoint,15));
+
+        showMyLocationMarker(curPoint);
+    }
+
+    private void showMyLocationMarker(LatLng curPoint){
+        if(myLocationMarker == null){
+            myLocationMarker = new MarkerOptions();
+            myLocationMarker.position(curPoint);
+            myLocationMarker.title("✔ 내 위치\n");
+            myLocationMarker.snippet("✔ GPS로 확인한 위치");
+            myLocationMarker.icon(BitmapDescriptorFactory.fromResource(R.drawable.mylocation));
+            map.addMarker(myLocationMarker);
+        } else {
+            myLocationMarker.position(curPoint);
+        }
     }
 }
