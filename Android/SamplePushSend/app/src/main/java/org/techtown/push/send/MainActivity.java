@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     TextView textView;
 
     static RequestQueue requestQueue;
-    static String regId;
+    static String regId = "e6DmAn17Tfu3lnohpg6pqS:APA91bHqtAQmeRqtM-rnkBwthYKZg8nPKQ3jUCbnxWxJGZbVXIJZDQdkDwD6zZyK1GeRcutiiZ4ZSzXekIU8q_nzSplBPteKHWwUNkKoH2Bs6toiTE1HusCUJVs75f43LSkBdfQBcrkT";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
