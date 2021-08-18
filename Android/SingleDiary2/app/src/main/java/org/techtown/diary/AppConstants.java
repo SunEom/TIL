@@ -1,5 +1,8 @@
 package org.techtown.diary;
 
+import android.os.Handler;
+import android.util.Log;
+
 import java.text.SimpleDateFormat;
 
 public class AppConstants {
@@ -17,10 +20,29 @@ public class AppConstants {
 
     public static final String KEY_URI_PHOTO = "URI_PHOTO";
 
+    public static String DATABASE_NAME = "note.db";
 
-    public static SimpleDateFormat dateFormat = new SimpleDateFormat("YYYYMMddHHmm");
-    public static SimpleDateFormat dateFormat2 = new SimpleDateFormat("YYYY-MM-dd HH시");
+    public static final int MODE_INSERT = 1;
+    public static final int MODE_MODIFY = 2;
+
+
+    public static SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmm");
+    public static SimpleDateFormat dateFormat2 = new SimpleDateFormat("yyyy-MM-dd HH시");
     public static SimpleDateFormat dateFormat3 = new SimpleDateFormat("MM월 dd일");
+    public static SimpleDateFormat dateFormat4 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    public static SimpleDateFormat dateFormat5 = new SimpleDateFormat("yyyy-MM-dd");
+
+
+    private static Handler handler = new Handler();
+    private static final String TAG = "AppConstants";
+    public static void println(final String data) {
+        handler.post(new Runnable() {
+            @Override
+            public void run() {
+                Log.d(TAG, data);
+            }
+        });
+    }
 
 
 }
