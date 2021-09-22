@@ -19,7 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="exercise21.c" />
     <ClCompile Include="exericse15.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
