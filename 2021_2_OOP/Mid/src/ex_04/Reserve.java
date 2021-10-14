@@ -5,9 +5,25 @@ import java.util.Scanner;
 public class Reserve {
    Seat[] reserved = new Seat[30];
    int count = 0;
-
+   boolean wantToQuit = false;
    public static void main(String[] args){
-
+      Reserve r = new Reserve();
+      Scanner sc = new Scanner(System.in);
+      while(!r.wantToQuit){
+         System.out.printf("원하는 메뉴를 입력해주세요 (예약/조회/취소/끝내기) : ");
+         String menu = sc.next();
+         if(menu.equals("예약")){
+            r.reserve();
+         } else if(menu.equals("조회")){
+            r.search();
+         } else if(menu.equals("취소")){
+            r.cancel();
+         } else if(menu.equals("끝내기")){
+            r.exit();
+         } else{
+            System.out.println("잘못된 입력입니다.");
+         }
+      }
    }
 
    void reserve(){
@@ -51,6 +67,7 @@ public class Reserve {
       System.out.println("");
 
       reserved[count++] = new Seat(type, name, seatNumber);
+      System.out.println("정상적으로 예약되었습니다.");
    }
 
    void search(){
@@ -79,6 +96,6 @@ public class Reserve {
    }
 
    void exit(){
-
+      wantToQuit = true;
    }
 }

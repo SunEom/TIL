@@ -1,12 +1,12 @@
 package ex_04;
 
 public class Seat {
-   char type;
+   SeatType type;
    String name;
    int seatNumber;
 
    public char getType() {
-      return type;
+      return type.getType();
    }
 
    public String getName() {
@@ -18,7 +18,7 @@ public class Seat {
    }
 
    Seat(char type, String name, int seatNumber){
-      this.type = type;
+      this.type = new SeatType(type);
       this.name = name;
       this.seatNumber = seatNumber;
    }
