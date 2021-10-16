@@ -1,3 +1,5 @@
+package lecture;
+
 class CardDeck{
    String shape;
    int[] deck = new int[3];
