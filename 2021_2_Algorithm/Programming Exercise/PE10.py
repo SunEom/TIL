@@ -1,69 +1,76 @@
-import sys
-import queue
+from collections import deque
 
-def bfs(u,v):
-    distance[u][v] = 0;
-    q = queue.Queue();
-    q.put([u,v])
-    prev_u = u;
-    prev_v = v;
+INF = 999999
 
-    while(not q.empty()):
-        [now_u, now_v] = q.get()
-        # 위
-        if now_u-1 >=0 and now_u-1 < n and now_v >= 0 and now_v < m:
-            if (not adjMat[now_u-1][now_v] == -1) and distance[now_u-1][now_v] > distance[now_u][now_v]+1:
-                distance[now_u-1][now_v] = distance[now_u][now_v]+1
-                q.put([now_u-1, now_v])
+def initVisited(n, m):
+    visited = []
+    for i in range(n):
+        temp = [False]*m
+        visited.append(temp)
+    return visited
 
-        # 오른쪽
-        if now_u >=0 and now_u < n and now_v+1 >= 0 and now_v+1 < m:
-            if (not adjMat[now_u][now_v+1] == -1) and distance[now_u][now_v+1] > distance[now_u][now_v]+1:
-                distance[now_u][now_v+1] = distance[now_u][now_v]+1
-                q.put([now_u, now_v+1])
-        # 아래
-        if now_u+1 >=0 and now_u+1 < n and now_v >= 0 and now_v < m:
-            if (not adjMat[now_u+1][now_v] == -1) and distance[now_u+1][now_v] > distance[now_u][now_v]+1:
-                distance[now_u+1][now_v] = distance[now_u][now_v]+1
-                q.put([now_u+1, now_v])
+def bfs():
+    q = deque()
 
-        #왼쪽
-        if now_u >=0 and now_u < n and now_v-1 >= 0 and now_v-1 < m:
-            if (not adjMat[now_u][now_v-1] == -1) and distance[now_u][now_v-1] > distance[now_u][now_v]+1:
-                distance[now_u][now_v-1] = distance[now_u][now_v]+1
-                q.put([now_u, now_v-1])
+    for p in startingPoint:
+        distance[p[0]][p[1]] = 0
+        visited[p[0]][p[1]] = True
+        q.append([p[0],p[1]])
 
-        
+    while len(q) !=0 :
+        [r, c] = q.popleft()
+
+        #위
+        if r-1 >= 0 and r-1 < n  and c>=0 and c < m :
+            if visited[r-1][c] == False and distance[r-1][c] > distance[r][c] +1:
+                distance[r-1][c] = distance[r][c] +1
+                visited[r-1][c] = True
+                q.append([r-1, c])
+
+        #아래
+        if r+1 >= 0 and r+1 < n  and c>=0 and c < m :
+            if visited[r+1][c] == False and distance[r+1][c] > distance[r][c] +1:
+                distance[r+1][c] = distance[r][c] +1
+                visited[r+1][c] = True
+                q.append([r+1, c])
+        #좌
+        if r >= 0 and r < n  and c-1>=0 and c-1 < m :
+            if visited[r][c-1] == False and distance[r][c-1] > distance[r][c] +1:
+                distance[r][c-1] = distance[r][c] +1
+                visited[r][c-1] = True
+                q.append([r, c-1])
+
+        #우
+        if r >= 0 and r < n  and c+1>=0 and c+1 < m :
+            if visited[r][c+1] == False and distance[r][c+1] > distance[r][c] +1:
+                distance[r][c+1] = distance[r][c] +1
+                visited[r][c+1] = True
+                q.append([r, c+1])
 
 m, n = map(int, input().split())
 
-adjMat = []
 startingPoint = []
-
 distance = []
+visited = initVisited(n, m)
 
 for i in range(n):
-    atemp = list(map(int, input().split()))
-    dtemp =[]
-    for j in range(len(atemp)):
-        if atemp[j] == -1:
-            dtemp.append(-1)
-        elif atemp[j] == 1:
+    temp = list(map(int, input().split()))
+    for j in range(len(temp)):
+        if temp[j] == 0:
+            temp[j] = INF
+        elif temp[j] == 1:
             startingPoint.append([i,j])
-            dtemp.append(sys.maxsize)
-        else :
-            dtemp.append(sys.maxsize)
-    adjMat.append(atemp)
-    distance.append(dtemp)
+    distance.append(temp)
+    
+bfs()
 
-for i in range(len(startingPoint)):
-    bfs(startingPoint[i][0],startingPoint[i][1])
+max = distance[0][0]
+for i in range(len(distance)):
+    for j in range(len(distance[0])):
+        if distance[i][j] > max :
+            max = distance[i][j]
 
-
-if max(map(max, distance)) == sys.maxsize:
+if max == INF:
     print(-1)
 else :
-    print(max(map(max, distance)))
-    
-
-    
+    print(max)
