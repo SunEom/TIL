@@ -17,7 +17,6 @@ for i in range(e):
     v -= 1
     adjList[u].append([w, v])
 
-
 h = []
 
 heapq.heappush(h, [0, k])
