@@ -1,3 +1,5 @@
+package MP07;
+
 import java.awt.*;
 
 public class Rectangle {
