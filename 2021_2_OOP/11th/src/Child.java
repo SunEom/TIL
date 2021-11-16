@@ -3,4 +3,7 @@ public class Child extends Parent{
    public void print(){
       System.out.printf("m = %d\n",m);
    }
+   public void privatePrint(){
+      System.out.printf("m = %d\n",m);
+   }
 }
