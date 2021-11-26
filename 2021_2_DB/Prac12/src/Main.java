@@ -3,6 +3,18 @@ import java.util.Scanner;
 import java.io.*;
 
 public class Main {
+	
+	public static void printCli() {
+		System.out.println("=====================================");
+		System.out.println("(0) 종료");
+		System.out.println("(1) 릴레이션 생성 및 데이터 추가");
+		System.out.println("(2) 제목을 이용한 검색");
+		System.out.println("(3) 관객수를 이용한 검색");
+		System.out.println("(4) 개봉일을 이용한 검색");
+		System.out.println("=====================================");
+		System.out.printf("원하는 번호를 입력하세요: ");
+	}
+	
 	public static void main(String[] args){
 		Connection conn = null;
 		Statement stmt = null;
@@ -31,6 +43,8 @@ public class Main {
 		while(true) {
 			printCli();
 			int option = sc.nextInt();
+			
+			
 			if(option == 0) break;
 			else if(option == 1) { // 릴레이션 생성 및 데이터 추가
 				try {
@@ -61,7 +75,8 @@ public class Main {
 					while(fileScanner.hasNextLine()) {
 						String row = fileScanner.nextLine();
 						String[] splitedRow = row.split("\\|");
-						stmt.executeUpdate("insert into movie values (\""+splitedRow[1]+"\", \""+splitedRow[2]+"\", \""+splitedRow[3]+"\", \""+splitedRow[4]+"\", \""+splitedRow[5]+"\", \""+splitedRow[6]+"\", \""+splitedRow[7]+"\", \""+splitedRow[8]+"\", \""+splitedRow[9]+"\")");
+						stmt.executeUpdate("insert into movie values (\""+splitedRow[1]+"\", \""+splitedRow[2]+"\", \""+splitedRow[3]+"\", \""
+						+splitedRow[4]+"\", \""+splitedRow[5]+"\", \""+splitedRow[6]+"\", \""+splitedRow[7]+"\", \""+splitedRow[8]+"\", \""+splitedRow[9]+"\")");
 					}
 					
 					
@@ -79,7 +94,8 @@ public class Main {
 					rs = stmt.executeQuery("Select * from movie where title like \"%"+title+"%\"");
 					while(rs.next()) {
 						System.out.println();
-		            	System.out.println(rs.getString("id") + "|" + rs.getString("title") + "|" + rs.getString("company") + "|" + rs.getDate("releasedate") + "|" + rs.getString("country") + "|" + rs.getInt("totalscreen") + "|" + String.format("%.2f", rs.getDouble("profit")) + "|" + rs.getInt("totalnum") + "|" + rs.getString("grade"));	
+		            	System.out.println(rs.getString("id") + "|" + rs.getString("title") + "|" + rs.getString("company") + "|" + rs.getDate("releasedate") + "|" 
+						+ rs.getString("country") + "|" + rs.getInt("totalscreen") + "|" + String.format("%.2f", rs.getDouble("profit")) + "|" + rs.getInt("totalnum") + "|" + rs.getString("grade"));	
 		            }
 					
 				} catch(SQLException e) {
@@ -93,8 +109,9 @@ public class Main {
 					int totalnum = sc.nextInt();
 					rs = stmt.executeQuery("Select * from movie where totalnum > "+totalnum);
 					while(rs.next()) {
-						System.out.println();
-		            	System.out.println(rs.getString("id") + "|" + rs.getString("title") + "|" + rs.getString("company") + "|" + rs.getDate("releasedate") + "|" + rs.getString("country") + "|" + rs.getInt("totalscreen") + "|" + String.format("%.2f", rs.getDouble("profit")) + "|" + rs.getInt("totalnum") + "|" + rs.getString("grade"));	
+						System.out.println();	
+		            	System.out.println(rs.getString("id") + "|" + rs.getString("title") + "|" + rs.getString("company") + "|" + rs.getDate("releasedate") + "|" 
+						+ rs.getString("country") + "|" + rs.getInt("totalscreen") + "|" + String.format("%.2f", rs.getDouble("profit")) + "|" + rs.getInt("totalnum") + "|" + rs.getString("grade"));	
 		            }
 					
 				} catch(SQLException e) {
@@ -108,12 +125,13 @@ public class Main {
 					Scanner strScanner = new Scanner(System.in);
 					String input = strScanner.nextLine();
 					String[] d = input.split(",");
-					System.out.println(d[0]+" "+d[1]);
 					
-					rs = stmt.executeQuery("Select * from movie where (releasedate >= \""+d[0]+"\" and releasedate <=\""+d[1]+"\") or (releasedate >= \""+d[1]+"\" and releasedate <=\""+d[0]+"\")");
+					rs = stmt.executeQuery("Select * from movie where (releasedate >= \""+d[0].trim()+"\" and releasedate <=\""
+					+d[1].trim()+"\") or (releasedate >= \""+d[1].trim()+"\" and releasedate <=\""+d[0].trim()+"\")");
 					while(rs.next()) {
 						System.out.println();
-		            	System.out.println(rs.getString("id") + "|" + rs.getString("title") + "|" + rs.getString("company") + "|" + rs.getDate("releasedate") + "|" + rs.getString("country") + "|" + rs.getInt("totalscreen") + "|" + String.format("%.2f", rs.getDouble("profit")) + "|" + rs.getInt("totalnum") + "|" + rs.getString("grade"));	
+		            	System.out.println(rs.getString("id") + "|" + rs.getString("title") + "|" + rs.getString("company") + "|" + rs.getDate("releasedate") + "|" + rs.getString("country") 
+		            	+ "|" + rs.getInt("totalscreen") + "|" + String.format("%.2f", rs.getDouble("profit")) + "|" + rs.getInt("totalnum") + "|" + rs.getString("grade"));	
 		            }
 					
 				} catch(SQLException e) {
@@ -127,15 +145,5 @@ public class Main {
 		}
 		
 	}
-	
-	public static void printCli() {
-		System.out.println("=====================================");
-		System.out.println("(0) 종료");
-		System.out.println("(1) 릴레이션 생성 및 데이터 추가");
-		System.out.println("(2) 제목을 이용한 검색");
-		System.out.println("(3) 관객수를 이용한 검색");
-		System.out.println("(4) 개봉일을 이용한 검색");
-		System.out.println("=====================================");
-		System.out.printf("원하는 번호를 입력하세요: ");
-	}
+
 }
