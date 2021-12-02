@@ -1,12 +1,13 @@
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 
 public class WordCounter extends WordList{
     private String[] stopWord;
     private HashMap<String, Integer>result;
     private String str;
 
-    public WordCounter(String str, String separator, String[] stopWord){
+    public WordCounter(String str, char[] separator, String[] stopWord){
         super(str, separator);
         this.str = str;
         this.stopWord = stopWord;
@@ -14,20 +15,12 @@ public class WordCounter extends WordList{
     }
 
     public void countWord(){
-        String[] separated = str.split(separator);
-        for(int i=0; i < separated.length; i++){
-            boolean isIn = false;
-            for(int j=0; j<stopWord.length; j++)
-                if( separated.equals(stopWord[j])){
-                    isIn = true;
-                    break;
-                }
-
-            if(!isIn){
-                if(result.containsKey(separated[i]))
-                    result.put(separated[i], result.get(separated[i]+1));
-                else
-                    result.put(separated[i], 1);
+        super.stringToArray(str);
+        for(String word : wordList){
+            if(result.containsKey(word)){
+                result.put(word, result.get(word)+1);
+            } else {
+                result.put(word, 1);
             }
         }
     }
@@ -36,7 +29,6 @@ public class WordCounter extends WordList{
         Iterator itr = result.keySet().iterator();
         while(itr.hasNext()){
             String key = (String)itr.next();
-            System.out.println(key);
             if(result.get(key)>=n)
                 System.out.printf("%s:%d\n",key,(int)result.get(key));
         }

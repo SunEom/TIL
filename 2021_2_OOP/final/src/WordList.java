@@ -1,19 +1,32 @@
+import java.io.BufferedReader;
+import java.io.Reader;
 import java.util.ArrayList;
 
 public class WordList {
     protected ArrayList<String> wordList = new ArrayList<>();
-    protected String[] separator;
+    protected char[] separator;
 
-    public WordList(String str, String[] separator){
+    public WordList(String str, char[] separator){
         this.separator = separator;
         stringToArray(str);
     }
 
-    private void stringToArray(String str){
-        String[] temp = str.split(separator[0]);
-
-        for(String s : temp)
-            this.wordList.add(s);
-
+    protected void stringToArray(String str){
+        String temp = "";
+        for(int i=0; i<str.length(); i++){
+            char now = str.charAt(i);
+            boolean isSeparator = false;
+            for(char s : separator){
+                if(now == s)
+                    isSeparator = true;
+            }
+            if(isSeparator){
+                wordList.add(temp);
+                temp = "";
+            }
+            else{
+                temp += now;
+            }
+        }
     }
 }
