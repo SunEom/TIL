@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.Formatter;
 import java.util.Scanner;
 
-public class Main {
+public class FileMain {
     public static void main(String[] args){
 //        StringBuilder sb = new StringBuilder();
 //
