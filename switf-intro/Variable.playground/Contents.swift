@@ -1,3 +1,5 @@
+import SwiftUI
+
 print("Int32 Min = \(Int32.min) Int32 Max = \(Int32.max)")
 
 var myChar1 = "f"
@@ -115,3 +117,20 @@ if let firstPet = pet1, let secondPet = pet2{
     print("insufficient pets")
 }
                                    
+let myButton: UIButton = UIButton()
+
+let myControl = myButton as UIControl
+
+
+let myScrollView: UIScrollView = UIScrollView()
+
+//let myTextView = myScrollView as UITextView
+
+//let myTextView = myScrollView as! UITextView
+
+if let myTextView = myScrollView as? UITextView{
+    print("Type cast to UITextView succeeded")
+} else {
+    print("Type cast to UItextView failed")
+}
+
