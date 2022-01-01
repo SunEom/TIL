@@ -16,3 +16,7 @@ UIView.animate(withDuration: 5.0, animations: {
     let rotation = CGAffineTransform(rotationAngle: 3.14)
     square.transform = rotation
 })
+
+for i in 1...20 {
+    print(i)
+}
