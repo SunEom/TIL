@@ -32,4 +32,4 @@ var myClass2 = myClass1
 myClass2.name = "David"
 
 print(myClass1.name)
-print(myClass2.namegit )
+print(myClass2.name)
