@@ -127,3 +127,57 @@ func sendMessage(from myName: String, to name : String...) -> String {
 }
 
 sendMessage(from: "gunter", to: "Json","Ablert","Stella")
+
+// Conditional Branch
+
+var age: Int = 12
+
+if age < 19 {
+    print("미성년자입니다.")
+}
+
+age = 20
+
+if age < 19 {
+    print("미성년자")
+} else {
+    print("성인")
+}
+
+let animal = "pig"
+
+if animal == "dog" {
+    print("강아지 사료주기")
+} else if animal == "cat"{
+    print("고양이 사료주기")
+} else {
+    print("해당하는 동물 사료가 없음")
+}
+
+let color = "red"
+
+switch color {
+case "blue":
+    print("파란색입니다.")
+case "green":
+    print("초록색입니다.")
+case "yellow":
+    print("노란색입니다.")
+default:
+    print("찾는 색상이 없습니다.")
+}
+
+let temperature = 30
+
+switch temperature {
+case -20...9:
+    print("겨울입니다.")
+case 10...14:
+    print("가을입니다.")
+case 15...25:
+    print("봄입니다.")
+case 26...35:
+    print("여름입니다.")
+default:
+    print("이상 기후입니다.")
+}
