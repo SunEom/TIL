@@ -82,3 +82,48 @@ set
 
 set.remove(20)
 set
+
+// Function & Method
+
+func sum(a: Int, b: Int) -> Int {
+    return a + b
+}
+
+sum(a:3, b: 5)
+
+func hello() -> String {
+    return "Hello"
+}
+
+hello()
+
+
+func printName() -> Void {
+    
+}
+
+func greeting(friend: String, me: String = "Gunter") {
+    print("Hello, \(friend)! I'm \(me)")
+}
+
+greeting(friend: "Albert")
+
+
+func sendMessage(from myName: String, to name : String) -> String {
+    return "Hello \(name)! I'm \(myName)"
+}
+
+sendMessage(from: "gunter", to: "Json")
+
+
+func sendMessage(_ name: String) -> String{
+    return "Hello \(name)!"
+}
+
+sendMessage("Suneom")
+
+func sendMessage(from myName: String, to name : String...) -> String {
+    return "Hello \(name)! I'm \(myName)"
+}
+
+sendMessage(from: "gunter", to: "Json","Ablert","Stella")
