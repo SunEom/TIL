@@ -16,3 +16,4 @@ struct SwiftUIDemo2App: App {
         }
     }
 }
+
