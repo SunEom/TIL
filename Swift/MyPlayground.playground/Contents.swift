@@ -181,3 +181,31 @@ case 26...35:
 default:
     print("이상 기후입니다.")
 }
+
+// Loop
+
+for i in 1...4 {
+    print(i)
+}
+
+let array = [1,2,3,4,5]
+
+for item in array {
+    print(item)
+}
+
+var num = 5
+
+while num < 10 {
+    num += 1
+}
+
+num
+
+var x = 6
+
+repeat {
+    x += 2
+} while x < 5
+
+x
