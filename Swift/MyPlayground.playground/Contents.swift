@@ -38,3 +38,47 @@ someCharacter = "☂️"
 var someString: String = "Hello! 😀"
 
 var number = 10 // 타입 추론
+
+// Collection Type
+
+var numbers: Array<Int> = Array<Int>()
+numbers.append(1)
+numbers.append(2)
+numbers.append(3)
+
+numbers[0]
+numbers[1]
+numbers[2]
+
+numbers.insert(4, at: 2)
+numbers
+
+numbers.remove(at: 0)
+numbers
+
+var names = [String]()
+var names2: [String] = []
+
+//var dic: Dictionary<String, Int> = Dictionary<String, Int>()
+var dic: [String: Int] = ["Kwon":1]
+dic["Kim"] = 3
+dic["Lee"] = 5
+dic
+
+dic["Kim"] = 6
+dic
+
+dic.removeValue(forKey: "Kim")
+dic
+
+var set: Set = Set<Int>()
+
+set.insert(10)
+set.insert(20)
+set.insert(30)
+set.insert(30)
+set.insert(30)
+set
+
+set.remove(20)
+set
