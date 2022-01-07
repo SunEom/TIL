@@ -22,7 +22,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        tapQuoteGeneratorButton(0)
     }
 
     @IBAction func tapQuoteGeneratorButton(_ sender: Any) {
