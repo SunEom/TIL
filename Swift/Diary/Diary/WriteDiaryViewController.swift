@@ -83,18 +83,18 @@ class WriteDiaryViewController: UIViewController {
         guard let title = self.titleTextField.text else { return }
         guard let contents = self.contentsTextView.text else { return }
         guard let date = self.diaryDate else { return }
-        let diary = Diary(title: title, contents: contents, date: date, isStar: false)
         
         switch self.diaryEditorMode {
         case .new:
+            let diary = Diary(title: title, contents: contents, date: date, isStar: false)
             self.delegate?.didSelectRegister(diary: diary)
             
-        case let .edit(indexPath, _):
-            NotificationCenter.default.post(name: NSNotification.Name("editDiary"), object: diary, userInfo: [
+        case let .edit(indexPath, diary):
+            let edittedDiary = Diary(title: title, contents: contents, date: date, isStar: diary.isStar)
+            NotificationCenter.default.post(name: NSNotification.Name("editDiary"), object: edittedDiary, userInfo: [
                 "indexPath.row": indexPath.row
             ])
         }
-        self.delegate?.didSelectRegister(diary: diary)
         self.navigationController?.popViewController(animated: true)
     }
     
