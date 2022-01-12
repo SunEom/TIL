@@ -16,6 +16,7 @@
 		BF4C4A8D278EA8B0001387EA /* DiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C4A8C278EA8B0001387EA /* DiaryCell.swift */; };
 		BF4C4A8F278EA8ED001387EA /* StarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C4A8E278EA8ED001387EA /* StarViewController.swift */; };
 		BF4C4A91278EAADF001387EA /* StarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C4A90278EAADF001387EA /* StarCell.swift */; };
+		BF4C4A93278EAC13001387EA /* WriteDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C4A92278EAC13001387EA /* WriteDiaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BF4C4A8C278EA8B0001387EA /* DiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCell.swift; sourceTree = "<group>"; };
 		BF4C4A8E278EA8ED001387EA /* StarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarViewController.swift; sourceTree = "<group>"; };
 		BF4C4A90278EAADF001387EA /* StarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarCell.swift; sourceTree = "<group>"; };
+		BF4C4A92278EAC13001387EA /* WriteDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteDiaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				BF4C4A8C278EA8B0001387EA /* DiaryCell.swift */,
 				BF4C4A8E278EA8ED001387EA /* StarViewController.swift */,
 				BF4C4A90278EAADF001387EA /* StarCell.swift */,
+				BF4C4A92278EAC13001387EA /* WriteDiaryViewController.swift */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF4C4A7D278EA354001387EA /* ViewController.swift in Sources */,
+				BF4C4A93278EAC13001387EA /* WriteDiaryViewController.swift in Sources */,
 				BF4C4A91278EAADF001387EA /* StarCell.swift in Sources */,
 				BF4C4A79278EA354001387EA /* AppDelegate.swift in Sources */,
 				BF4C4A7B278EA354001387EA /* SceneDelegate.swift in Sources */,
