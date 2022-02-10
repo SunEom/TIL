@@ -15,6 +15,7 @@
 		BF2C83A227B532B70053264E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2C83A127B532B70053264E /* Assets.xcassets */; };
 		BF2C83A527B532B70053264E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2C83A327B532B70053264E /* LaunchScreen.storyboard */; };
 		BF2C83AD27B535A90053264E /* COVIDDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C83AC27B535A90053264E /* COVIDDetailViewController.swift */; };
+		BF2C83B127B53D920053264E /* CityCovidOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C83B027B53D920053264E /* CityCovidOverview.swift */; };
 		D546267E594B4D783097FCD2 /* Pods_COVID19.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17CE23F1B3FD23798149A40F /* Pods_COVID19.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		BF2C83A427B532B70053264E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF2C83A627B532B70053264E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF2C83AC27B535A90053264E /* COVIDDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COVIDDetailViewController.swift; sourceTree = "<group>"; };
+		BF2C83B027B53D920053264E /* CityCovidOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCovidOverview.swift; sourceTree = "<group>"; };
 		E218C791C90D9BE971C08E48 /* Pods-COVID19.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID19.debug.xcconfig"; path = "Target Support Files/Pods-COVID19/Pods-COVID19.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 				BF2C83A327B532B70053264E /* LaunchScreen.storyboard */,
 				BF2C83A627B532B70053264E /* Info.plist */,
 				BF2C839E27B532B60053264E /* COVID19.xcdatamodeld */,
+				BF2C83B027B53D920053264E /* CityCovidOverview.swift */,
 			);
 			path = COVID19;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				BF2C839A27B532B60053264E /* ViewController.swift in Sources */,
 				BF2C839627B532B60053264E /* AppDelegate.swift in Sources */,
 				BF2C839827B532B60053264E /* SceneDelegate.swift in Sources */,
+				BF2C83B127B53D920053264E /* CityCovidOverview.swift in Sources */,
 				BF2C83AD27B535A90053264E /* COVIDDetailViewController.swift in Sources */,
 				BF2C83A027B532B60053264E /* COVID19.xcdatamodeld in Sources */,
 			);
