@@ -35,6 +35,7 @@ class ViewController: UIViewController {
             guard let data = data, error == nil else { return }
             let decoder = JSONDecoder()
             let weatherInformation = try? decoder.decode(WeatherInformation.self, from: data)
+        
             debugPrint(weatherInformation)
         }.resume()
     }
