@@ -244,8 +244,19 @@
                                     <action selector="resetPasswordButtonTapped:" destination="GOJ-Mg-r8E" eventType="touchUpInside" id="omC-ig-qgP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c59-PT-enT">
+                                <rect key="frame" x="141.5" y="534" width="131" height="34.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="닉네임 업데이트">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="profileUpdateButtonTapped:" destination="GOJ-Mg-r8E" eventType="touchUpInside" id="519-ff-2DO"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLH-Yg-UVd">
-                                <rect key="frame" x="164" y="534" width="86.5" height="35.5"/>
+                                <rect key="frame" x="164" y="588.5" width="86.5" height="35.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="로그아웃">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
@@ -259,11 +270,13 @@
                         <viewLayoutGuide key="safeArea" id="Vg6-sI-8iC"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="yLH-Yg-UVd" firstAttribute="top" secondItem="z0H-wf-T9G" secondAttribute="bottom" constant="20" id="KTs-uK-huN"/>
                             <constraint firstItem="z0H-wf-T9G" firstAttribute="top" secondItem="s7X-JX-2CV" secondAttribute="bottom" constant="20" id="ObN-yl-g8M"/>
                             <constraint firstItem="s7X-JX-2CV" firstAttribute="centerX" secondItem="1iw-qY-Za1" secondAttribute="centerX" id="PLB-EL-sKw"/>
+                            <constraint firstItem="c59-PT-enT" firstAttribute="top" secondItem="z0H-wf-T9G" secondAttribute="bottom" constant="20" id="RM2-KW-z59"/>
                             <constraint firstItem="s7X-JX-2CV" firstAttribute="centerY" secondItem="1iw-qY-Za1" secondAttribute="centerY" id="ZYl-ST-WmQ"/>
                             <constraint firstItem="yLH-Yg-UVd" firstAttribute="centerX" secondItem="1iw-qY-Za1" secondAttribute="centerX" id="krw-Jf-v3W"/>
+                            <constraint firstItem="yLH-Yg-UVd" firstAttribute="top" secondItem="c59-PT-enT" secondAttribute="bottom" constant="20" id="t3f-bf-ZVx"/>
+                            <constraint firstItem="c59-PT-enT" firstAttribute="centerX" secondItem="1iw-qY-Za1" secondAttribute="centerX" id="tOI-jZ-OB8"/>
                             <constraint firstItem="z0H-wf-T9G" firstAttribute="centerX" secondItem="1iw-qY-Za1" secondAttribute="centerX" id="wjM-Yz-fQP"/>
                         </constraints>
                     </view>

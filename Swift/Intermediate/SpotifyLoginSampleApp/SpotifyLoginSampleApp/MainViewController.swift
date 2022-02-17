@@ -33,7 +33,20 @@ class MainViewController: UIViewController {
 		resetPasswordButton.isHidden = !isEmailSginIn
 	}
 
-	@IBAction func logoutButtonTapped(_ sender: Any) {
+    @IBAction func profileUpdateButtonTapped(_ sender: Any) {
+        let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+        changeRequest?.displayName = "Suneom"
+        changeRequest?.commitChanges { _ in
+            let displayName = Auth.auth().currentUser?.displayName ?? Auth.auth().currentUser?.email ?? "고객"
+            
+            self.welcomeLabel.text = """
+            환영합니다.
+            \(displayName)님
+            """
+            
+        }
+    }
+    @IBAction func logoutButtonTapped(_ sender: Any) {
 		let firebaseAuth = Auth.auth()
 		do {
 			try firebaseAuth.signOut()
