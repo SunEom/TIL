@@ -14,7 +14,6 @@ struct CreditCard: Codable {
     let cardImageURL: String
     let promotionDetail: PromotionDetail
     let isSelected: Bool?
-    
 }
 
 struct PromotionDetail: Codable {
