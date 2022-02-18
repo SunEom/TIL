@@ -17,6 +17,7 @@
 		BF7D734527BF47FF0001CEB2 /* AlertListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF7D734327BF47FF0001CEB2 /* AlertListCell.xib */; };
 		BF7D734727BF494B0001CEB2 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D734627BF494B0001CEB2 /* Alert.swift */; };
 		BF7D734927BF4B9A0001CEB2 /* AddAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D734827BF4B9A0001CEB2 /* AddAlertViewController.swift */; };
+		BF7D734B27BF530F0001CEB2 /* UNNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D734A27BF530F0001CEB2 /* UNNotificationCenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		BF7D734327BF47FF0001CEB2 /* AlertListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertListCell.xib; sourceTree = "<group>"; };
 		BF7D734627BF494B0001CEB2 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		BF7D734827BF4B9A0001CEB2 /* AddAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlertViewController.swift; sourceTree = "<group>"; };
+		BF7D734A27BF530F0001CEB2 /* UNNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNNotificationCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				BF7D732827BF46AC0001CEB2 /* AppDelegate.swift */,
 				BF7D732A27BF46AC0001CEB2 /* SceneDelegate.swift */,
 				BF7D732E27BF46AC0001CEB2 /* Main.storyboard */,
+				BF7D734A27BF530F0001CEB2 /* UNNotificationCenter.swift */,
 				BF7D734027BF47310001CEB2 /* AlertListViewController.swift */,
 				BF7D734827BF4B9A0001CEB2 /* AddAlertViewController.swift */,
 				BF7D734627BF494B0001CEB2 /* Alert.swift */,
@@ -156,6 +159,7 @@
 				BF7D734427BF47FF0001CEB2 /* AlertListCell.swift in Sources */,
 				BF7D734727BF494B0001CEB2 /* Alert.swift in Sources */,
 				BF7D734127BF47310001CEB2 /* AlertListViewController.swift in Sources */,
+				BF7D734B27BF530F0001CEB2 /* UNNotificationCenter.swift in Sources */,
 				BF7D734927BF4B9A0001CEB2 /* AddAlertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

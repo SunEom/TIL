@@ -75,7 +75,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="YEs-HC-veX">
-                                <rect key="frame" x="201" y="153.5" width="193" height="50"/>
+                                <rect key="frame" x="201" y="154" width="193" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="193" id="5uz-Oe-1fF"/>
                                     <constraint firstAttribute="height" constant="50" id="hS1-X2-ySk"/>
