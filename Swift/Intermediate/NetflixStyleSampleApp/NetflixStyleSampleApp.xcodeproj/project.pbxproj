@@ -17,6 +17,7 @@
 		BFE50DA127C636E600EE4721 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE50DA027C636E600EE4721 /* Content.swift */; };
 		BFE50DA327C639E900EE4721 /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE50DA227C639E900EE4721 /* ContentCollectionViewCell.swift */; };
 		BFE50DA527C63B5600EE4721 /* ContentCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE50DA427C63B5600EE4721 /* ContentCollectionViewHeader.swift */; };
+		BFE50DA727C646A700EE4721 /* ContentCollectionViewRankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE50DA627C646A700EE4721 /* ContentCollectionViewRankCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		BFE50DA027C636E600EE4721 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		BFE50DA227C639E900EE4721 /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
 		BFE50DA427C63B5600EE4721 /* ContentCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewHeader.swift; sourceTree = "<group>"; };
+		BFE50DA627C646A700EE4721 /* ContentCollectionViewRankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewRankCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			children = (
 				BFE50D8527C6335E00EE4721 /* AppDelegate.swift */,
 				BFE50D9927C6340E00EE4721 /* HomeViewController.swift */,
+				BFE50DA627C646A700EE4721 /* ContentCollectionViewRankCell.swift */,
 				BFE50DA427C63B5600EE4721 /* ContentCollectionViewHeader.swift */,
 				BFE50DA227C639E900EE4721 /* ContentCollectionViewCell.swift */,
 				BFE50D8727C6335E00EE4721 /* SceneDelegate.swift */,
@@ -158,6 +161,7 @@
 				BFE50D8627C6335E00EE4721 /* AppDelegate.swift in Sources */,
 				BFE50DA527C63B5600EE4721 /* ContentCollectionViewHeader.swift in Sources */,
 				BFE50D8827C6335E00EE4721 /* SceneDelegate.swift in Sources */,
+				BFE50DA727C646A700EE4721 /* ContentCollectionViewRankCell.swift in Sources */,
 				BFE50D9A27C6340E00EE4721 /* HomeViewController.swift in Sources */,
 				BFE50DA127C636E600EE4721 /* Content.swift in Sources */,
 				BFE50DA327C639E900EE4721 /* ContentCollectionViewCell.swift in Sources */,
