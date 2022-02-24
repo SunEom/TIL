@@ -20,6 +20,8 @@
 		BFE50DA727C646A700EE4721 /* ContentCollectionViewRankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE50DA627C646A700EE4721 /* ContentCollectionViewRankCell.swift */; };
 		BFE50DA927C657ED00EE4721 /* ContentCollectionViewMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE50DA827C657ED00EE4721 /* ContentCollectionViewMainCell.swift */; };
 		BFE50DAB27C65C2E00EE4721 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE50DAA27C65C2E00EE4721 /* UIButton.swift */; };
+		BFE50DFA27C7554F00EE4721 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE50DF927C7554F00EE4721 /* ContentView.swift */; };
+		BFE50DFC27C756CF00EE4721 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE50DFB27C756CF00EE4721 /* ContentDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		BFE50DA627C646A700EE4721 /* ContentCollectionViewRankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewRankCell.swift; sourceTree = "<group>"; };
 		BFE50DA827C657ED00EE4721 /* ContentCollectionViewMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewMainCell.swift; sourceTree = "<group>"; };
 		BFE50DAA27C65C2E00EE4721 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		BFE50DF927C7554F00EE4721 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BFE50DFB27C756CF00EE4721 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			children = (
 				BFE50D8527C6335E00EE4721 /* AppDelegate.swift */,
 				BFE50D9927C6340E00EE4721 /* HomeViewController.swift */,
+				BFE50DF927C7554F00EE4721 /* ContentView.swift */,
+				BFE50DFB27C756CF00EE4721 /* ContentDetailView.swift */,
 				BFE50DA827C657ED00EE4721 /* ContentCollectionViewMainCell.swift */,
 				BFE50DAA27C65C2E00EE4721 /* UIButton.swift */,
 				BFE50DA627C646A700EE4721 /* ContentCollectionViewRankCell.swift */,
@@ -165,11 +171,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE50D8627C6335E00EE4721 /* AppDelegate.swift in Sources */,
+				BFE50DFC27C756CF00EE4721 /* ContentDetailView.swift in Sources */,
 				BFE50DA527C63B5600EE4721 /* ContentCollectionViewHeader.swift in Sources */,
 				BFE50D8827C6335E00EE4721 /* SceneDelegate.swift in Sources */,
 				BFE50DA727C646A700EE4721 /* ContentCollectionViewRankCell.swift in Sources */,
 				BFE50D9A27C6340E00EE4721 /* HomeViewController.swift in Sources */,
 				BFE50DA927C657ED00EE4721 /* ContentCollectionViewMainCell.swift in Sources */,
+				BFE50DFA27C7554F00EE4721 /* ContentView.swift in Sources */,
 				BFE50DA127C636E600EE4721 /* Content.swift in Sources */,
 				BFE50DA327C639E900EE4721 /* ContentCollectionViewCell.swift in Sources */,
 				BFE50DAB27C65C2E00EE4721 /* UIButton.swift in Sources */,
