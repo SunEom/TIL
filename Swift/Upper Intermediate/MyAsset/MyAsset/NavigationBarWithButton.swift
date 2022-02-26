@@ -27,6 +27,7 @@ struct NavigationBarWithButton: ViewModifier {
                 )
                     .accentColor(.black)
                     .padding(.all, 6)
+                    .padding(.trailing, 5)
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(.black))
             )
             .navigationBarTitleDisplayMode(.inline)
