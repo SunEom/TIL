@@ -25,6 +25,7 @@ struct ContentView: View {
                     Text("자산")
                 }
                 .tag(Tab.asset)
+            
             Color.blue
                 .edgesIgnoringSafeArea(.all)
                 .tabItem {
@@ -32,6 +33,7 @@ struct ContentView: View {
                     Text("추천")
                 }
                 .tag(Tab.recommand)
+            
             Color.yellow
                 .edgesIgnoringSafeArea(.all)
                 .tabItem {
@@ -39,6 +41,7 @@ struct ContentView: View {
                     Text("알림")
                 }
                 .tag(Tab.alarm)
+            
             Color.red
                 .edgesIgnoringSafeArea(.all)
                 .tabItem {
