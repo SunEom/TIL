@@ -6,10 +6,6 @@
 	objectVersion = 55;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		BF96D91F27D60C4E004DBBAF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96D91E27D60C4E004DBBAF /* main.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		BF96D90C27D60A9A004DBBAF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -26,7 +22,17 @@
 		BF96D90E27D60A9A004DBBAF /* BaekJoonSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BaekJoonSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF96D91127D60A9A004DBBAF /* 2557.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2557.swift; sourceTree = "<group>"; };
 		BF96D91927D60B3F004DBBAF /* 10718.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10718.swift; sourceTree = "<group>"; };
-		BF96D91E27D60C4E004DBBAF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BF96D91E27D60C4E004DBBAF /* 10171.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10171.swift; sourceTree = "<group>"; };
+		BF96D92027D6E258004DBBAF /* 10172.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10172.swift; sourceTree = "<group>"; };
+		BF96D92227D6E3E0004DBBAF /* 1000.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1000.swift; sourceTree = "<group>"; };
+		BF96D92427D6E53F004DBBAF /* 1001.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1001.swift; sourceTree = "<group>"; };
+		BF96D92627D6E79F004DBBAF /* 10998.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10998.swift; sourceTree = "<group>"; };
+		BF96D92827D6E844004DBBAF /* 1008.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1008.swift; sourceTree = "<group>"; };
+		BF96D92A27D6E8CD004DBBAF /* 10869.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10869.swift; sourceTree = "<group>"; };
+		BF96D92C27D6E9B5004DBBAF /* 10926.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10926.swift; sourceTree = "<group>"; };
+		BF96D92E27D6EA30004DBBAF /* 18108.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 18108.swift; sourceTree = "<group>"; };
+		BF96D93027D6EAE0004DBBAF /* 10430.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10430.swift; sourceTree = "<group>"; };
+		BF96D93227D6EB70004DBBAF /* 2588.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2588.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +73,19 @@
 		BF96D91827D60AAA004DBBAF /* IO and Operation */ = {
 			isa = PBXGroup;
 			children = (
-				BF96D91E27D60C4E004DBBAF /* main.swift */,
+				BF96D91E27D60C4E004DBBAF /* 10171.swift */,
+				BF96D92027D6E258004DBBAF /* 10172.swift */,
+				BF96D92227D6E3E0004DBBAF /* 1000.swift */,
 				BF96D91127D60A9A004DBBAF /* 2557.swift */,
 				BF96D91927D60B3F004DBBAF /* 10718.swift */,
+				BF96D92427D6E53F004DBBAF /* 1001.swift */,
+				BF96D92627D6E79F004DBBAF /* 10998.swift */,
+				BF96D92827D6E844004DBBAF /* 1008.swift */,
+				BF96D92A27D6E8CD004DBBAF /* 10869.swift */,
+				BF96D92C27D6E9B5004DBBAF /* 10926.swift */,
+				BF96D92E27D6EA30004DBBAF /* 18108.swift */,
+				BF96D93027D6EAE0004DBBAF /* 10430.swift */,
+				BF96D93227D6EB70004DBBAF /* 2588.swift */,
 			);
 			path = "IO and Operation";
 			sourceTree = "<group>";
@@ -133,7 +149,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF96D91F27D60C4E004DBBAF /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +273,7 @@
 		BF96D91627D60A9A004DBBAF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KB3R84Q4BQ;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -275,6 +291,7 @@
 		BF96D91727D60A9A004DBBAF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KB3R84Q4BQ;
 				ENABLE_HARDENED_RUNTIME = YES;
