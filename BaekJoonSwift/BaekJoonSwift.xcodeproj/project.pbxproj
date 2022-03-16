@@ -28,6 +28,11 @@
 		BF32D41927E1DE1200AB23F2 /* 1929.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1929.swift; sourceTree = "<group>"; };
 		BF32D41B27E1DE8300AB23F2 /* 4948 (unsolved).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4948 (unsolved).swift"; sourceTree = "<group>"; };
 		BF32D41D27E1DF1800AB23F2 /* 9020.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9020.swift; sourceTree = "<group>"; };
+		BF32D41F27E240B900AB23F2 /* 1085.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1085.swift; sourceTree = "<group>"; };
+		BF32D42127E241B800AB23F2 /* 3009.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3009.swift; sourceTree = "<group>"; };
+		BF32D42327E2433D00AB23F2 /* 4153.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4153.swift; sourceTree = "<group>"; };
+		BF32D42527E245BE00AB23F2 /* 3053.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3053.swift; sourceTree = "<group>"; };
+		BF32D42727E246CA00AB23F2 /* 1002.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1002.swift; sourceTree = "<group>"; };
 		BF6CFFDC27D7BD77001296DF /* 1330.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1330.swift; sourceTree = "<group>"; };
 		BF6CFFDE27D7BE03001296DF /* 9498.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9498.swift; sourceTree = "<group>"; };
 		BF6CFFE027D7BF63001296DF /* 2753.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2753.swift; sourceTree = "<group>"; };
@@ -156,7 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				BFB73AE127E0E3DD00CA881F /* Basic Math2 */,
-				BF9C3FC127DCA1C7005711D7 /* Basic Math */,
+				BF9C3FC127DCA1C7005711D7 /* Basic Math (1) */,
 				BFCE3DF427DAFF9F004B1058 /* String */,
 				BFCE3DEF27DAF6B2004B1058 /* Function */,
 				BFCE3DE027DA2047004B1058 /* Array */,
@@ -188,7 +193,7 @@
 			path = "IO and Operation";
 			sourceTree = "<group>";
 		};
-		BF9C3FC127DCA1C7005711D7 /* Basic Math */ = {
+		BF9C3FC127DCA1C7005711D7 /* Basic Math (1) */ = {
 			isa = PBXGroup;
 			children = (
 				BF9C3FCC27DF4F72005711D7 /* 2775.swift */,
@@ -200,13 +205,18 @@
 				BF9C3FC227DCA1F6005711D7 /* 1712.swift */,
 				BF9C3FC427DCA41F005711D7 /* 2292.swift */,
 			);
-			path = "Basic Math";
+			path = "Basic Math (1)";
 			sourceTree = "<group>";
 		};
 		BFB73AE127E0E3DD00CA881F /* Basic Math2 */ = {
 			isa = PBXGroup;
 			children = (
 				BFB73AE227E0E3E600CA881F /* 1978.swift */,
+				BF32D41F27E240B900AB23F2 /* 1085.swift */,
+				BF32D42127E241B800AB23F2 /* 3009.swift */,
+				BF32D42327E2433D00AB23F2 /* 4153.swift */,
+				BF32D42527E245BE00AB23F2 /* 3053.swift */,
+				BF32D42727E246CA00AB23F2 /* 1002.swift */,
 				BF32D41527E1CF9200AB23F2 /* 2581.swift */,
 				BF32D41727E1DD8B00AB23F2 /* 11653.swift */,
 				BF32D41B27E1DE8300AB23F2 /* 4948 (unsolved).swift */,
