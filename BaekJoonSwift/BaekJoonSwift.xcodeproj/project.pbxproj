@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BF12006527E574BA00F9BF98 /* 2798.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2798.swift; sourceTree = "<group>"; };
 		BF32D41527E1CF9200AB23F2 /* 2581.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2581.swift; sourceTree = "<group>"; };
 		BF32D41727E1DD8B00AB23F2 /* 11653.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11653.swift; sourceTree = "<group>"; };
 		BF32D41927E1DE1200AB23F2 /* 1929.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1929.swift; sourceTree = "<group>"; };
@@ -113,6 +114,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF12006427E574AD00F9BF98 /* Bruth Force */ = {
+			isa = PBXGroup;
+			children = (
+				BF12006527E574BA00F9BF98 /* 2798.swift */,
+			);
+			path = "Bruth Force";
+			sourceTree = "<group>";
+		};
 		BF6CFFDB27D7BD65001296DF /* If */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +173,7 @@
 		BF96D91027D60A9A004DBBAF /* BaekJoonSwift */ = {
 			isa = PBXGroup;
 			children = (
+				BF12006427E574AD00F9BF98 /* Bruth Force */,
 				BFAB5C4327E38D3700F83289 /* Recursive (1) */,
 				BFB73AE127E0E3DD00CA881F /* Basic Math2 (1) */,
 				BF9C3FC127DCA1C7005711D7 /* Basic Math (1) */,
