@@ -16,5 +16,4 @@ for i in 0..<len-2 {
         }
     }
 }
-
 print(max)
