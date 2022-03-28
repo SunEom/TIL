@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BF32D41C27E1DE8300AB23F2 /* 4948 (unsolved).swift in Sources */ = {isa = PBXBuildFile; fileRef = BF32D41B27E1DE8300AB23F2 /* 4948 (unsolved).swift */; };
-		BFC4CC4C27F1658D00CB7329 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC4CC4B27F1658D00CB7329 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -99,7 +98,9 @@
 		BFC4CC4427F042AF00CB7329 /* 1181.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1181.swift; sourceTree = "<group>"; };
 		BFC4CC4627F0456000CB7329 /* 10814.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10814.swift; sourceTree = "<group>"; };
 		BFC4CC4827F0487900CB7329 /* 18870.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 18870.swift; sourceTree = "<group>"; };
-		BFC4CC4B27F1658D00CB7329 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BFC4CC4B27F1658D00CB7329 /* 15649.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 15649.swift; sourceTree = "<group>"; };
+		BFC4CC4D27F16BAD00CB7329 /* 15650.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 15650.swift; sourceTree = "<group>"; };
+		BFC4CC4F27F1845100CB7329 /* 15651.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 15651.swift; sourceTree = "<group>"; };
 		BFCE3DDA27D9EAF7004B1058 /* 10952.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10952.swift; sourceTree = "<group>"; };
 		BFCE3DDC27D9EC47004B1058 /* 10951.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10951.swift; sourceTree = "<group>"; };
 		BFCE3DDE27D9ED04004B1058 /* 1110.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1110.swift; sourceTree = "<group>"; };
@@ -294,7 +295,9 @@
 		BFC4CC4A27F1658400CB7329 /* BackTracking */ = {
 			isa = PBXGroup;
 			children = (
-				BFC4CC4B27F1658D00CB7329 /* main.swift */,
+				BFC4CC4B27F1658D00CB7329 /* 15649.swift */,
+				BFC4CC4D27F16BAD00CB7329 /* 15650.swift */,
+				BFC4CC4F27F1845100CB7329 /* 15651.swift */,
 			);
 			path = BackTracking;
 			sourceTree = "<group>";
@@ -408,7 +411,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFC4CC4C27F1658D00CB7329 /* main.swift in Sources */,
 				BF32D41C27E1DE8300AB23F2 /* 4948 (unsolved).swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
