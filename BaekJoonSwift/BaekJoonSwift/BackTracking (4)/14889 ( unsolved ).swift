@@ -1,3 +1,5 @@
+//시간 초과
+
 import Foundation
 
 var result = Int.max
