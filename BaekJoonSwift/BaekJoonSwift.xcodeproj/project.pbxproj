@@ -229,7 +229,7 @@
 		BF96D91027D60A9A004DBBAF /* BaekJoonSwift */ = {
 			isa = PBXGroup;
 			children = (
-				BFCC44A327F415D100AB1257 /* DP */,
+				BFCC44A327F415D100AB1257 /* DP (1) */,
 				BFC4CC4A27F1658400CB7329 /* BackTracking (4) */,
 				BF87EF2A27EAFACE00A2EB0C /* Sorting */,
 				BF12006427E574AD00F9BF98 /* Bruth Force */,
@@ -325,7 +325,7 @@
 			path = "BackTracking (4)";
 			sourceTree = "<group>";
 		};
-		BFCC44A327F415D100AB1257 /* DP */ = {
+		BFCC44A327F415D100AB1257 /* DP (1) */ = {
 			isa = PBXGroup;
 			children = (
 				BFCC44A427F4160700AB1257 /* 1003.swift */,
@@ -343,7 +343,7 @@
 				BF9D316327F5CE44004386F9 /* 9461.swift */,
 				BF9D316527F5D11E004386F9 /* 1149.swift */,
 			);
-			path = DP;
+			path = "DP (1)";
 			sourceTree = "<group>";
 		};
 		BFCE3DD927D9EAE8004B1058 /* while */ = {
