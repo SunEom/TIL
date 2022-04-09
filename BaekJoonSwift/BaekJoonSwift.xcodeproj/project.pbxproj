@@ -47,6 +47,8 @@
 		BF32D42327E2433D00AB23F2 /* 4153.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4153.swift; sourceTree = "<group>"; };
 		BF32D42527E245BE00AB23F2 /* 3053.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3053.swift; sourceTree = "<group>"; };
 		BF32D42727E246CA00AB23F2 /* 1002.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1002.swift; sourceTree = "<group>"; };
+		BF33EE6328013F2C00A547C4 /* 11047.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11047.swift; sourceTree = "<group>"; };
+		BF33EE65280140FA00A547C4 /* 1931.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1931.swift; sourceTree = "<group>"; };
 		BF6CFFDC27D7BD77001296DF /* 1330.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1330.swift; sourceTree = "<group>"; };
 		BF6CFFDE27D7BE03001296DF /* 9498.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9498.swift; sourceTree = "<group>"; };
 		BF6CFFE027D7BF63001296DF /* 2753.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2753.swift; sourceTree = "<group>"; };
@@ -163,6 +165,15 @@
 			path = "Bruth Force";
 			sourceTree = "<group>";
 		};
+		BF33EE6228013F2000A547C4 /* Greedy */ = {
+			isa = PBXGroup;
+			children = (
+				BF33EE6328013F2C00A547C4 /* 11047.swift */,
+				BF33EE65280140FA00A547C4 /* 1931.swift */,
+			);
+			path = Greedy;
+			sourceTree = "<group>";
+		};
 		BF6CFFDB27D7BD65001296DF /* If */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,7 +242,8 @@
 		BF96D91027D60A9A004DBBAF /* BaekJoonSwift */ = {
 			isa = PBXGroup;
 			children = (
-				BFCC44A327F415D100AB1257 /* DP (1) */,
+				BF33EE6228013F2000A547C4 /* Greedy */,
+				BFCC44A327F415D100AB1257 /* DP (2) */,
 				BFC4CC4A27F1658400CB7329 /* BackTracking (4) */,
 				BF87EF2A27EAFACE00A2EB0C /* Sorting */,
 				BF12006427E574AD00F9BF98 /* Bruth Force */,
@@ -327,7 +339,7 @@
 			path = "BackTracking (4)";
 			sourceTree = "<group>";
 		};
-		BFCC44A327F415D100AB1257 /* DP (1) */ = {
+		BFCC44A327F415D100AB1257 /* DP (2) */ = {
 			isa = PBXGroup;
 			children = (
 				BFCC44A427F4160700AB1257 /* 1003.swift */,
@@ -347,7 +359,7 @@
 				BF9D316527F5D11E004386F9 /* 1149.swift */,
 				BF327CA327FFE2FC00B7A8C7 /* 1912.swift */,
 			);
-			path = "DP (1)";
+			path = "DP (2)";
 			sourceTree = "<group>";
 		};
 		BFCE3DD927D9EAE8004B1058 /* while */ = {
