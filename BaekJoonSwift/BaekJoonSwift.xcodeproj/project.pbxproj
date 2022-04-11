@@ -49,6 +49,7 @@
 		BF32D42727E246CA00AB23F2 /* 1002.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1002.swift; sourceTree = "<group>"; };
 		BF33EE6328013F2C00A547C4 /* 11047.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11047.swift; sourceTree = "<group>"; };
 		BF33EE65280140FA00A547C4 /* 1931.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1931.swift; sourceTree = "<group>"; };
+		BF647D82280456AF00485CC9 /* 5086.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5086.swift; sourceTree = "<group>"; };
 		BF6CFFDC27D7BD77001296DF /* 1330.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1330.swift; sourceTree = "<group>"; };
 		BF6CFFDE27D7BE03001296DF /* 9498.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9498.swift; sourceTree = "<group>"; };
 		BF6CFFE027D7BF63001296DF /* 2753.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2753.swift; sourceTree = "<group>"; };
@@ -178,6 +179,14 @@
 			path = Greedy;
 			sourceTree = "<group>";
 		};
+		BF647D812804569F00485CC9 /* Numbers and Combinations */ = {
+			isa = PBXGroup;
+			children = (
+				BF647D82280456AF00485CC9 /* 5086.swift */,
+			);
+			path = "Numbers and Combinations";
+			sourceTree = "<group>";
+		};
 		BF6CFFDB27D7BD65001296DF /* If */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +255,7 @@
 		BF96D91027D60A9A004DBBAF /* BaekJoonSwift */ = {
 			isa = PBXGroup;
 			children = (
+				BF647D812804569F00485CC9 /* Numbers and Combinations */,
 				BF33EE6228013F2000A547C4 /* Greedy */,
 				BFCC44A327F415D100AB1257 /* DP (2) */,
 				BFC4CC4A27F1658400CB7329 /* BackTracking (4) */,
