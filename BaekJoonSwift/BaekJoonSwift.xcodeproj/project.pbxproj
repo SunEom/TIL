@@ -36,6 +36,7 @@
 		BF223C7C27F95C6F0089507A /* 2156.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2156.swift; sourceTree = "<group>"; };
 		BF223C7E27FAA2C30089507A /* 11053.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11053.swift; sourceTree = "<group>"; };
 		BF223C8027FABF710089507A /* 11054.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11054.swift; sourceTree = "<group>"; };
+		BF2A5E1028119AD40097A337 /* 15649.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 15649.swift; sourceTree = "<group>"; };
 		BF327CA327FFE2FC00B7A8C7 /* 1912.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1912.swift; sourceTree = "<group>"; };
 		BF327CA527FFE89900B7A8C7 /* 12865 ( time over ).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "12865 ( time over ).swift"; sourceTree = "<group>"; };
 		BF32D41527E1CF9200AB23F2 /* 2581.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2581.swift; sourceTree = "<group>"; };
@@ -179,6 +180,14 @@
 			path = "Bruth Force";
 			sourceTree = "<group>";
 		};
+		BF2A5E0F28119ACD0097A337 /* BackTracking */ = {
+			isa = PBXGroup;
+			children = (
+				BF2A5E1028119AD40097A337 /* 15649.swift */,
+			);
+			path = BackTracking;
+			sourceTree = "<group>";
+		};
 		BF33EE6228013F2000A547C4 /* Greedy */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +286,7 @@
 		BF96D91027D60A9A004DBBAF /* BaekJoonSwift */ = {
 			isa = PBXGroup;
 			children = (
+				BF2A5E0F28119ACD0097A337 /* BackTracking */,
 				BF647D812804569F00485CC9 /* Numbers and Combinations (1) */,
 				BF33EE6228013F2000A547C4 /* Greedy */,
 				BFCC44A327F415D100AB1257 /* DP (2) */,
