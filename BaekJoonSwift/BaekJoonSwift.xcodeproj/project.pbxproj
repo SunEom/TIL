@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BF32D41C27E1DE8300AB23F2 /* 4948 (unsolved).swift in Sources */ = {isa = PBXBuildFile; fileRef = BF32D41B27E1DE8300AB23F2 /* 4948 (unsolved).swift */; };
+		BF5E93DA28218C8B0045BE9D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5E93D928218C8B0045BE9D /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +59,9 @@
 		BF566894280A54AE0024201E /* 11050.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11050.swift; sourceTree = "<group>"; };
 		BF585C01281130E500A5EE99 /* 2004.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2004.swift; sourceTree = "<group>"; };
 		BF5D794F280513110003BF04 /* 1037.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1037.swift; sourceTree = "<group>"; };
+		BF5E93D5282185FA0045BE9D /* 4949.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4949.swift; sourceTree = "<group>"; };
+		BF5E93D7282187D20045BE9D /* 1874.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1874.swift; sourceTree = "<group>"; };
+		BF5E93D928218C8B0045BE9D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		BF647D82280456AF00485CC9 /* 5086.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5086.swift; sourceTree = "<group>"; };
 		BF6CFFDC27D7BD77001296DF /* 1330.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1330.swift; sourceTree = "<group>"; };
 		BF6CFFDE27D7BE03001296DF /* 9498.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9498.swift; sourceTree = "<group>"; };
@@ -446,6 +450,9 @@
 				BFCCECF8281D86C6001B3EB6 /* 10828.swift */,
 				BFED10812821272800239A6A /* 9012.swift */,
 				BFEB0672281F8D380060DB0A /* 10773.swift */,
+				BF5E93D7282187D20045BE9D /* 1874.swift */,
+				BF5E93D928218C8B0045BE9D /* main.swift */,
+				BF5E93D5282185FA0045BE9D /* 4949.swift */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
@@ -559,6 +566,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF5E93DA28218C8B0045BE9D /* main.swift in Sources */,
 				BF32D41C27E1DE8300AB23F2 /* 4948 (unsolved).swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
