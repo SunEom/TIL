@@ -142,6 +142,7 @@
 		BF9D316927F68364004386F9 /* 2579.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2579.swift; sourceTree = "<group>"; };
 		BFA16E51280D74FE00D90284 /* 1010.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1010.swift; sourceTree = "<group>"; };
 		BFA478BD27F192DD00428655 /* 15652.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 15652.swift; sourceTree = "<group>"; };
+		BFA47ABC28476BE300BF283F /* 17478.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17478.swift; sourceTree = "<group>"; };
 		BFAA5BD12845C19F002EF510 /* 24480.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 24480.swift; sourceTree = "<group>"; };
 		BFAA5BD32845C4AD002EF510 /* 24444(Runtime Error).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "24444(Runtime Error).swift"; sourceTree = "<group>"; };
 		BFAB5C4427E38D3F00F83289 /* 10872.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10872.swift; sourceTree = "<group>"; };
@@ -466,6 +467,7 @@
 			children = (
 				BFAB5C4427E38D3F00F83289 /* 10872.swift */,
 				BFAB5C4627E38E0900F83289 /* 10870.swift */,
+				BFA47ABC28476BE300BF283F /* 17478.swift */,
 				BFAB5C4827E38E9800F83289 /* 2447 (unsolved).swift */,
 				BFAB5C4A27E392EE00F83289 /* 11729.swift */,
 			);
