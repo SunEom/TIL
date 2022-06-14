@@ -11,9 +11,9 @@ var queue = [Int]()
 var visited = Array(repeating: 0, count: N+1)
 var edges =  Array(repeating: [Int](), count: N+1)
 
-print(edges)
+
 for _ in 0..<M {
-    let temp = readLine()!.split(separator: " ").map { Int($0)! }
+    let temp = readLine()!.split(separator: " ").map { Int(String($0))! }
     edges[temp[0]].append(temp[1])
     edges[temp[1]].append(temp[0])
 }
@@ -26,9 +26,10 @@ func bfs(_ r: Int) {
     visited[r] = order
     order += 1
     queue.append(r)
-    
-    while !queue.isEmpty {
-        let temp = queue.removeFirst()
+    var idx = 0
+    while idx < queue.count {
+        let temp = queue[idx]
+        idx += 1
         for v in edges[temp] {
             if visited[v] == 0 {
                 queue.append(v)
@@ -41,7 +42,7 @@ func bfs(_ r: Int) {
 
 bfs(R)
 
-for i in 1...M {
+for i in 1...N {
     result += "\(visited[i])\n"
 }
 
