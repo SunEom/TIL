@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF2B5F6C286474F50041E1F3 /* 12852.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B5F6B286474F50041E1F3 /* 12852.swift */; };
 		BF32D41C27E1DE8300AB23F2 /* 4948 (unsolved).swift in Sources */ = {isa = PBXBuildFile; fileRef = BF32D41B27E1DE8300AB23F2 /* 4948 (unsolved).swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		BF2B5F64285CE76C0041E1F3 /* 1753 TimeOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1753 TimeOver.swift"; sourceTree = "<group>"; };
 		BF2B5F66285ECD0A0041E1F3 /* 16928 Unsolved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16928 Unsolved.swift"; sourceTree = "<group>"; };
 		BF2B5F68285F805F0041E1F3 /* 7569 Timeover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "7569 Timeover.swift"; sourceTree = "<group>"; };
+		BF2B5F6B286474F50041E1F3 /* 12852.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 12852.swift; sourceTree = "<group>"; };
 		BF326AA8282B57F000F1DE1C /* 1920.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1920.swift; sourceTree = "<group>"; };
 		BF327CA327FFE2FC00B7A8C7 /* 1912.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1912.swift; sourceTree = "<group>"; };
 		BF327CA527FFE89900B7A8C7 /* 12865 ( time over ).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "12865 ( time over ).swift"; sourceTree = "<group>"; };
@@ -259,6 +261,14 @@
 			path = "Shortest Path";
 			sourceTree = "<group>";
 		};
+		BF2B5F6A286474EB0041E1F3 /* DP & Shortest Path */ = {
+			isa = PBXGroup;
+			children = (
+				BF2B5F6B286474F50041E1F3 /* 12852.swift */,
+			);
+			path = "DP & Shortest Path";
+			sourceTree = "<group>";
+		};
 		BF326AA7282B57E600F1DE1C /* Binary Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,6 +439,7 @@
 		BF96D91027D60A9A004DBBAF /* BaekJoonSwift */ = {
 			isa = PBXGroup;
 			children = (
+				BF2B5F6A286474EB0041E1F3 /* DP & Shortest Path */,
 				BF2B5F63285CE7640041E1F3 /* Shortest Path */,
 				BFD8B41928550337007163A7 /* Heap */,
 				BFDD6423284E5DB200E91426 /* Geometry */,
@@ -715,6 +726,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF2B5F6C286474F50041E1F3 /* 12852.swift in Sources */,
 				BF32D41C27E1DE8300AB23F2 /* 4948 (unsolved).swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
