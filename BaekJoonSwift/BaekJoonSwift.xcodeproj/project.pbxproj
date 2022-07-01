@@ -203,6 +203,7 @@
 		BFCEE8CE27FB4283009F4AC6 /* 2565.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2565.swift; sourceTree = "<group>"; };
 		BFD024982856227000FC3C16 /* 1927.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1927.swift; sourceTree = "<group>"; };
 		BFD0249C2857926C00FC3C16 /* 2740.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2740.swift; sourceTree = "<group>"; };
+		BFD2754C286F41F900B0376E /* 9372.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9372.swift; sourceTree = "<group>"; };
 		BFD8B41A2855035E007163A7 /* 11279.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11279.swift; sourceTree = "<group>"; };
 		BFDD6424284E5DBC00E91426 /* 1358.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1358.swift; sourceTree = "<group>"; };
 		BFEB0672281F8D380060DB0A /* 10773.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10773.swift; sourceTree = "<group>"; };
@@ -438,6 +439,7 @@
 		BF96D91027D60A9A004DBBAF /* BaekJoonSwift */ = {
 			isa = PBXGroup;
 			children = (
+				BFD2754B286F41E300B0376E /* Minimum Spanning Tree */,
 				BF2B5F6A286474EB0041E1F3 /* DP & Shortest Path */,
 				BF2B5F63285CE7640041E1F3 /* Shortest Path */,
 				BFD8B41928550337007163A7 /* Heap */,
@@ -647,6 +649,14 @@
 				BF9C3FBF27DC3D9B005711D7 /* 1316.swift */,
 			);
 			path = String;
+			sourceTree = "<group>";
+		};
+		BFD2754B286F41E300B0376E /* Minimum Spanning Tree */ = {
+			isa = PBXGroup;
+			children = (
+				BFD2754C286F41F900B0376E /* 9372.swift */,
+			);
+			path = "Minimum Spanning Tree";
 			sourceTree = "<group>";
 		};
 		BFD8B41928550337007163A7 /* Heap */ = {
