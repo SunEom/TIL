@@ -135,6 +135,7 @@
 		BF9766872816A2C8009E119E /* 14888.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14888.swift; sourceTree = "<group>"; };
 		BF97668A2816F5FC009E119E /* 11659.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11659.swift; sourceTree = "<group>"; };
 		BF997A80287D70F100242B46 /* 1976.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1976.swift; sourceTree = "<group>"; };
+		BF997A83287EC62800242B46 /* 4195.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4195.swift; sourceTree = "<group>"; };
 		BF9C3FB727DC35D2005711D7 /* 1152.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1152.swift; sourceTree = "<group>"; };
 		BF9C3FB927DC3635005711D7 /* 2908.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2908.swift; sourceTree = "<group>"; };
 		BF9C3FBB27DC36CB005711D7 /* 5622.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5622.swift; sourceTree = "<group>"; };
@@ -516,6 +517,7 @@
 			children = (
 				BFB7F00B2871867B00DF849E /* 1717.swift */,
 				BF997A80287D70F100242B46 /* 1976.swift */,
+				BF997A83287EC62800242B46 /* 4195.swift */,
 			);
 			path = "Union Find";
 			sourceTree = "<group>";
