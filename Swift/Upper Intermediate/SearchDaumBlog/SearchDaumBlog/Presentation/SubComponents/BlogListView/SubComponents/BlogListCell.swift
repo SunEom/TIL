@@ -10,7 +10,7 @@ import SnapKit
 import Kingfisher
 
 class BlogListCell: UITableViewCell {
-    let thumnailImageView = UIImageView()
+    let thumbnailImageView = UIImageView()
     let nameLabel = UILabel()
     let titleLabel = UILabel()
     let datetimeLabel = UILabel()
@@ -18,7 +18,7 @@ class BlogListCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        thumnailImageView.contentMode = .scaleAspectFit
+        thumbnailImageView.contentMode = .scaleAspectFit
 
         nameLabel.font = .systemFont(ofSize: 10, weight: .bold)
         
@@ -27,16 +27,16 @@ class BlogListCell: UITableViewCell {
         
         datetimeLabel.font = .systemFont(ofSize: 12, weight: .light)
         
-        [thumnailImageView, nameLabel, titleLabel, datetimeLabel].forEach {
+        [thumbnailImageView, nameLabel, titleLabel, datetimeLabel].forEach {
             addSubview($0)
         }
         
         nameLabel.snp.makeConstraints {
-            $0.top.leading.equalToSuperview().inset(0)
-            $0.trailing.lessThanOrEqualTo(thumnailImageView.snp.leading).offset(-8)
+            $0.top.leading.equalToSuperview().inset(8)
+            $0.trailing.lessThanOrEqualTo(thumbnailImageView.snp.leading).offset(-8)
         }
         
-        thumnailImageView.snp.makeConstraints {
+        thumbnailImageView.snp.makeConstraints {
             $0.centerY.equalToSuperview()
             $0.top.trailing.bottom.equalToSuperview().inset(8)
             $0.width.height.equalTo(80)
@@ -45,19 +45,19 @@ class BlogListCell: UITableViewCell {
         titleLabel.snp.makeConstraints {
             $0.top.equalTo(nameLabel.snp.bottom).offset(8)
             $0.leading.equalTo(nameLabel)
-            $0.trailing.equalTo(thumnailImageView.snp.leading).offset(-8)
+            $0.trailing.equalTo(thumbnailImageView.snp.leading).offset(-8)
         }
         
         datetimeLabel.snp.makeConstraints {
             $0.top.equalTo(titleLabel.snp.bottom).offset(8)
             $0.leading.equalTo(nameLabel)
-            $0.trailing.equalTo(thumnailImageView.snp.leading)
-            $0.bottom.equalTo(thumnailImageView)
+            $0.trailing.equalTo(thumbnailImageView.snp.leading)
+            $0.bottom.equalTo(thumbnailImageView)
         }
     }
     
     func setData(_ data: BlogListCellData) {
-        thumnailImageView.kf.setImage(with: data.thumnailURL, placeholder: UIImage(systemName: "photo"))
+        thumbnailImageView.kf.setImage(with: data.thumbnailURL, placeholder: UIImage(systemName: "photo"))
         nameLabel.text = data.name
         titleLabel.text = data.title
         

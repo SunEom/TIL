@@ -23,6 +23,9 @@
 		BF5273592892ACA2001C1A02 /* BlogListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5273582892ACA2001C1A02 /* BlogListCell.swift */; };
 		BF52735B2892ACAC001C1A02 /* BlogListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52735A2892ACAC001C1A02 /* BlogListCellData.swift */; };
 		BF5273642892B26D001C1A02 /* AlertActionConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5273632892B26D001C1A02 /* AlertActionConvertible.swift */; };
+		BF5273662892C58D001C1A02 /* DKBlog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5273652892C58D001C1A02 /* DKBlog.swift */; };
+		BF5273682892C78A001C1A02 /* SearchBlogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5273672892C78A001C1A02 /* SearchBlogAPI.swift */; };
+		BF5BAA912892C87D0021BF6F /* SearchBlogNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5BAA902892C87D0021BF6F /* SearchBlogNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		BF5273582892ACA2001C1A02 /* BlogListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListCell.swift; sourceTree = "<group>"; };
 		BF52735A2892ACAC001C1A02 /* BlogListCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListCellData.swift; sourceTree = "<group>"; };
 		BF5273632892B26D001C1A02 /* AlertActionConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionConvertible.swift; sourceTree = "<group>"; };
+		BF5273652892C58D001C1A02 /* DKBlog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DKBlog.swift; sourceTree = "<group>"; };
+		BF5273672892C78A001C1A02 /* SearchBlogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlogAPI.swift; sourceTree = "<group>"; };
+		BF5BAA902892C87D0021BF6F /* SearchBlogNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlogNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 			children = (
 				BF52735C2892ACC5001C1A02 /* Presentation */,
 				BF52735D2892ACD0001C1A02 /* Entity */,
+				BF5273692892C78E001C1A02 /* Network */,
 				BF52732F2892A5E4001C1A02 /* AppDelegate.swift */,
 				BF5273312892A5E4001C1A02 /* SceneDelegate.swift */,
 				BF5273382892A5E5001C1A02 /* Assets.xcassets */,
@@ -101,6 +108,7 @@
 			children = (
 				BF52735A2892ACAC001C1A02 /* BlogListCellData.swift */,
 				BF5273632892B26D001C1A02 /* AlertActionConvertible.swift */,
+				BF5273652892C58D001C1A02 /* DKBlog.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -146,6 +154,15 @@
 				BF5273582892ACA2001C1A02 /* BlogListCell.swift */,
 			);
 			path = SubComponents;
+			sourceTree = "<group>";
+		};
+		BF5273692892C78E001C1A02 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BF5273672892C78A001C1A02 /* SearchBlogAPI.swift */,
+				BF5BAA902892C87D0021BF6F /* SearchBlogNetwork.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,12 +249,15 @@
 			files = (
 				BF5273512892A6C1001C1A02 /* MainViewController.swift in Sources */,
 				BF5273592892ACA2001C1A02 /* BlogListCell.swift in Sources */,
+				BF5273662892C58D001C1A02 /* DKBlog.swift in Sources */,
 				BF5273572892AC94001C1A02 /* BlogList.swift in Sources */,
+				BF5273682892C78A001C1A02 /* SearchBlogAPI.swift in Sources */,
 				BF52735B2892ACAC001C1A02 /* BlogListCellData.swift in Sources */,
 				BF5273532892A7E4001C1A02 /* SearchBar.swift in Sources */,
 				BF5273302892A5E4001C1A02 /* AppDelegate.swift in Sources */,
 				BF5273552892AAF7001C1A02 /* FilterView.swift in Sources */,
 				BF5273642892B26D001C1A02 /* AlertActionConvertible.swift in Sources */,
+				BF5BAA912892C87D0021BF6F /* SearchBlogNetwork.swift in Sources */,
 				BF5273322892A5E4001C1A02 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
