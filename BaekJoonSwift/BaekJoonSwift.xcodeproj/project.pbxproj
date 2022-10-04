@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF1FFA4C28CD70380016E0EC /* 24060.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1FFA4B28CD70380016E0EC /* 24060.swift */; };
 		BF32D41C27E1DE8300AB23F2 /* 4948 (unsolved).swift in Sources */ = {isa = PBXBuildFile; fileRef = BF32D41B27E1DE8300AB23F2 /* 4948 (unsolved).swift */; };
 /* End PBXBuildFile section */
 
@@ -107,7 +106,7 @@
 		BF702DFA2828A7380046C6BE /* 1629.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1629.swift; sourceTree = "<group>"; };
 		BF702DFC282A18EF0046C6BE /* 1992.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1992.swift; sourceTree = "<group>"; };
 		BF702DFE282A20440046C6BE /* 1780.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1780.swift; sourceTree = "<group>"; };
-		BF702E00282A28D20046C6BE /* 11401 (Unsolved).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "11401 (Unsolved).swift"; sourceTree = "<group>"; };
+		BF702E00282A28D20046C6BE /* 11401.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11401.swift; sourceTree = "<group>"; };
 		BF7C04D32843431C00D10EB2 /* 2178.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2178.swift; sourceTree = "<group>"; };
 		BF7EA705284BAC3C00BE0B4A /* 1269.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1269.swift; sourceTree = "<group>"; };
 		BF7EA707284BAD1E00BE0B4A /* 11478.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11478.swift; sourceTree = "<group>"; };
@@ -387,7 +386,7 @@
 				BF702DF82826BDDB0046C6BE /* 2630 (TimeOver).swift */,
 				BF702DFC282A18EF0046C6BE /* 1992.swift */,
 				BF702DFE282A20440046C6BE /* 1780.swift */,
-				BF702E00282A28D20046C6BE /* 11401 (Unsolved).swift */,
+				BF702E00282A28D20046C6BE /* 11401.swift */,
 				BF702DFA2828A7380046C6BE /* 1629.swift */,
 				BFD0249C2857926C00FC3C16 /* 2740.swift */,
 			);
@@ -464,7 +463,6 @@
 			children = (
 				BF12AF66288266C6009B984A /* Tree */,
 				BF997A7F287D70E500242B46 /* Union Find */,
-				BFE8362A2877343300D9550E /* DP2 */,
 				BFD2754B286F41E300B0376E /* Minimum Spanning Tree */,
 				BF2B5F6A286474EB0041E1F3 /* DP & Shortest Path */,
 				BF2B5F63285CE7640041E1F3 /* Shortest Path */,
@@ -716,13 +714,6 @@
 			path = Geometry;
 			sourceTree = "<group>";
 		};
-		BFE8362A2877343300D9550E /* DP2 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DP2;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -783,7 +774,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF32D41C27E1DE8300AB23F2 /* 4948 (unsolved).swift in Sources */,
-				BF1FFA4C28CD70380016E0EC /* 24060.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
