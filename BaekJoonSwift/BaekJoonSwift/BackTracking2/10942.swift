@@ -19,7 +19,7 @@ func solution() {
     }
  
     print(res)
-}
+}s
 
 func isPalin (start: Int, end: Int, arr: [Int]) -> Int {
     if start >= end {
