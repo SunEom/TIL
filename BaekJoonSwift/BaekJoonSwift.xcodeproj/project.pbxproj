@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BF32D41C27E1DE8300AB23F2 /* 4948 (unsolved).swift in Sources */ = {isa = PBXBuildFile; fileRef = BF32D41B27E1DE8300AB23F2 /* 4948 (unsolved).swift */; };
-		BFC87C8F28F9A63E00994990 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC87C8E28F9A63E00994990 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -195,7 +194,8 @@
 		BFC6F22C2824A8670002521B /* 1966.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1966.swift; sourceTree = "<group>"; };
 		BFC7184E281842DD00CDEB04 /* 2559.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2559.swift; sourceTree = "<group>"; };
 		BFC71850281844DA00CDEB04 /* 16139.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 16139.swift; sourceTree = "<group>"; };
-		BFC87C8E28F9A63E00994990 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BFC7E7AF28FAE4DF0094321C /* 3015 timeover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3015 timeover.swift"; sourceTree = "<group>"; };
+		BFC87C8E28F9A63E00994990 /* 2477.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2477.swift; sourceTree = "<group>"; };
 		BFCC449F27F341CC00AB1257 /* 14888.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14888.swift; sourceTree = "<group>"; };
 		BFCC44A127F346C300AB1257 /* 14889.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14889.swift; sourceTree = "<group>"; };
 		BFCC44A427F4160700AB1257 /* 1003.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1003.swift; sourceTree = "<group>"; };
@@ -662,6 +662,7 @@
 				BF5E93D7282187D20045BE9D /* 1874.swift */,
 				BF5E93D928218C8B0045BE9D /* 17298.swift */,
 				BF5E93D5282185FA0045BE9D /* 4949.swift */,
+				BFC7E7AF28FAE4DF0094321C /* 3015 timeover.swift */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
@@ -738,7 +739,7 @@
 			isa = PBXGroup;
 			children = (
 				BFDD6424284E5DBC00E91426 /* 1358.swift */,
-				BFC87C8E28F9A63E00994990 /* main.swift */,
+				BFC87C8E28F9A63E00994990 /* 2477.swift */,
 			);
 			path = Geometry;
 			sourceTree = "<group>";
@@ -803,7 +804,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF32D41C27E1DE8300AB23F2 /* 4948 (unsolved).swift in Sources */,
-				BFC87C8F28F9A63E00994990 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
