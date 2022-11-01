@@ -1,33 +1,44 @@
-// 운동
+// 숨바꼭질 3
 
 import Foundation
 
 let input = readLine()!.split(separator: " ").map { Int(String($0))! }
-let v = input[0]
-let e = input[1]
+var visited = Array(repeating: 100001, count: 100001)
 
-var costs = Array(repeating: Array(repeating: 5000000, count: v+1), count: v+1)
-
-for _ in 0..<e {
-    let temp = readLine()!.split(separator: " ").map { Int(String($0))! }
-    costs[temp[0]][temp[1]] = temp[2]
-}
-
-for h in 1...v {
-    for i in 1...v {
-        for j in 1...v {
-            if h != i && h != j {
-                costs[i][j] = min(costs[i][j], costs[i][h] + costs[h][j])
-            }
+func start(s: Int, t: Int) {
+    var queue = [Int]()
+    
+    visited[s] = 0
+    queue.append(s)
+    
+    if s == t {
+        return
+    }
+    
+    while !queue.isEmpty {
+        let v = queue.removeFirst()
+        
+        if v == t {
+            break
+        }
+        
+        if v != 0, v*2 <= 100000 && visited[v*2] == 100001  {
+            visited[v*2] = visited[v]
+            queue.append(v*2)
+        }
+        
+        if v-1 >= 0 && visited[v-1] == 100001 {
+            visited[v-1] = visited[v] + 1
+            queue.append(v-1)
+        }
+        
+        if v+1 <= 100000 && visited[v+1] == 100001 {
+            visited[v+1] = visited[v] + 1
+            queue.append(v+1)
         }
     }
 }
 
-var result = 5000000
-for i in 1...v {
-    if result > costs[i][i] {
-        result = costs[i][i]
-    }
-}
+start(s: input[0], t: input[1])
+print(visited[input[1]])
 
-print("\(result == 5000000 ? -1 : result)")
