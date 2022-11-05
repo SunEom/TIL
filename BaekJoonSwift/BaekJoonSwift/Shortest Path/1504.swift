@@ -1,28 +1,46 @@
 // 특정한 최단 경로
 
-import Foundation
-//// timeover
-//let input = readLine()!.split(separator: " ").map { Int(String($0))! }
-//let v = input[0]
-//let e = input[1]
-//
-//var cost = Array(repeating: Array(repeating: 1001, count: v+1), count: v+1)
-//
-//for _ in 0..<e {
-//    let temp = readLine()!.split(separator: " ").map { Int(String($0))! }
-//    cost[temp[0]][temp[1]] = temp[2]
-//    cost[temp[1]][temp[0]] = temp[2]
-//}
-//
-//for k in 1...v {
-//    for i in 1...v {
-//        for j in 1...v {
-//            cost[i][j] = min(cost[i][j], cost[i][k] + cost[k][j])
-//        }
-//    }
-//}
-//
-//let target = readLine()!.split(separator: " ").map { Int(String($0))! }
-//print(min(cost[1][target[0]] + cost[target[0]][target[1]] + cost[target[1]][v], cost[1][target[1]] + cost[target[1]][target[0]] + cost[target[0]][v]))
+func dijkstra(start: Int) -> [Int] {
+    var distance = Array(repeating: 9999999999, count: N+1)
+    distance[start] = 0
+    
+    var queue = [start]
+    
+    while !queue.isEmpty {
+        queue.sort()
+        let v = queue.removeFirst()
+        
+        for e in edges[v] {
+            if distance[e.0] > distance[v] + e.1 {
+                distance[e.0] = distance[v] + e.1
+                queue.append(e.0)
+            }
+        }
+        
+    }
+    
+    return distance
+}
 
 
+let input = readLine()!.split(separator: " ").map{ Int(String($0))! }
+
+let N = input[0]
+let M = input[1]
+var edges = Array(repeating: [(Int, Int)]() , count: N+1)
+
+for _ in 0..<M {
+    let t = readLine()!.split(separator: " ").map { Int(String($0))! }
+    edges[t[0]].append((t[1], t[2]))
+    edges[t[1]].append((t[0], t[2]))
+}
+
+var targets = readLine()!.split(separator: " ").map { Int(String($0))! }
+
+let d1 = dijkstra(start: 1)
+let d2 = dijkstra(start: targets[0])
+let d3 = dijkstra(start: targets[1])
+
+let result = min(d1[targets[0]] + d2[targets[1]] + d3[N], d1[targets[1]] + d3[targets[0]] + d2[N])
+
+print(result >= 9999999999 ? -1 : result)
