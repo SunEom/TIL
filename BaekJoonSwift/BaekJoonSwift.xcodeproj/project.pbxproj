@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		BF002AE128347E0400077422 /* 10816.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10816.swift; sourceTree = "<group>"; };
 		BF023E942917BF6200768888 /* 2587.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2587.swift; sourceTree = "<group>"; };
+		BF023E9729188B3000768888 /* 3584.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3584.swift; sourceTree = "<group>"; };
 		BF045E2C28421ADF005C1990 /* 12015.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 12015.swift; sourceTree = "<group>"; };
 		BF067FB82805D8C1001A0577 /* 2609.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2609.swift; sourceTree = "<group>"; };
 		BF09E35528CC502D00B12DD1 /* 25501.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 25501.swift; sourceTree = "<group>"; };
@@ -270,6 +271,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF023E9629188B1900768888 /* Lowest Common Ancestor */ = {
+			isa = PBXGroup;
+			children = (
+				BF023E9729188B3000768888 /* 3584.swift */,
+			);
+			path = "Lowest Common Ancestor";
+			sourceTree = "<group>";
+		};
 		BF12006427E574AD00F9BF98 /* Bruth Force */ = {
 			isa = PBXGroup;
 			children = (
@@ -541,6 +550,7 @@
 		BF96D91027D60A9A004DBBAF /* BaekJoonSwift */ = {
 			isa = PBXGroup;
 			children = (
+				BF023E9629188B1900768888 /* Lowest Common Ancestor */,
 				BF233C752912153F007D5F1E /* String Alg */,
 				BF3B35BD29058318007EBABC /* 2 Dimention Array */,
 				BF3B35BA290450A8007EBABC /* Tree & DP */,
