@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF02DEE4293B38070040E239 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF02DEE3293B38070040E239 /* main.swift */; };
 		BF32D41C27E1DE8300AB23F2 /* 4948 (unsolved).swift in Sources */ = {isa = PBXBuildFile; fileRef = BF32D41B27E1DE8300AB23F2 /* 4948 (unsolved).swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		BF023E9B291B41F600768888 /* 4386.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4386.swift; sourceTree = "<group>"; };
 		BF02DEDF2936FDDD0040E239 /* 11057.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11057.swift; sourceTree = "<group>"; };
 		BF02DEE1293886D20040E239 /* 9655.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9655.swift; sourceTree = "<group>"; };
+		BF02DEE3293B38070040E239 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		BF045E2C28421ADF005C1990 /* 12015.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 12015.swift; sourceTree = "<group>"; };
 		BF067FB82805D8C1001A0577 /* 2609.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2609.swift; sourceTree = "<group>"; };
 		BF09E35528CC502D00B12DD1 /* 25501.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 25501.swift; sourceTree = "<group>"; };
@@ -753,6 +755,7 @@
 				BF9D316127F5CBE2004386F9 /* 1904.swift */,
 				BF9D316727F5D5B0004386F9 /* 1932.swift */,
 				BF223C7827F8145E0089507A /* 1463.swift */,
+				BF02DEE3293B38070040E239 /* main.swift */,
 				BF223C7A27F816530089507A /* 10844.swift */,
 				BF9D316927F68364004386F9 /* 2579.swift */,
 				BF223C7C27F95C6F0089507A /* 2156.swift */,
@@ -941,6 +944,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF02DEE4293B38070040E239 /* main.swift in Sources */,
 				BF32D41C27E1DE8300AB23F2 /* 4948 (unsolved).swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
