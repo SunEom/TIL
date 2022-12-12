@@ -109,6 +109,7 @@
 		BF5E93D928218C8B0045BE9D /* 17298.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17298.swift; sourceTree = "<group>"; };
 		BF5F5F3E2945675700EBF16F /* 2502.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2502.swift; sourceTree = "<group>"; };
 		BF5F5F402946D15600EBF16F /* 13699.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = 13699.swift; path = ../13699.swift; sourceTree = "<group>"; };
+		BF5F5F442947B28A00EBF16F /* 1924.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1924.swift; sourceTree = "<group>"; };
 		BF647D82280456AF00485CC9 /* 5086.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5086.swift; sourceTree = "<group>"; };
 		BF6BF7192924F12C008AADB1 /* 11758.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11758.swift; sourceTree = "<group>"; };
 		BF6BF71B29253FAB008AADB1 /* 17386.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17386.swift; sourceTree = "<group>"; };
@@ -455,6 +456,14 @@
 			path = "Queue & Deque";
 			sourceTree = "<group>";
 		};
+		BF5F5F432947B28500EBF16F /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				BF5F5F442947B28A00EBF16F /* 1924.swift */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
 		BF647D812804569F00485CC9 /* Numbers and Combinations (1) */ = {
 			isa = PBXGroup;
 			children = (
@@ -605,6 +614,7 @@
 		BF96D91027D60A9A004DBBAF /* BaekJoonSwift */ = {
 			isa = PBXGroup;
 			children = (
+				BF5F5F432947B28500EBF16F /* Math */,
 				BFFAA4BF2931A3EA00745731 /* Base */,
 				BF335517292CCAA500662A5B /* Two Pointer */,
 				BF023E9629188B1900768888 /* Lowest Common Ancestor */,
