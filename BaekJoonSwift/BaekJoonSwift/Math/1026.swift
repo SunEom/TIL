@@ -13,4 +13,5 @@ arr2.sort(by: >)
 zip(arr1, arr2).forEach { (a,b) in
     result += a*b
 }
+
 print(result)
