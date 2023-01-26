@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BF32D41C27E1DE8300AB23F2 /* 4948 (unsolved).swift in Sources */ = {isa = PBXBuildFile; fileRef = BF32D41B27E1DE8300AB23F2 /* 4948 (unsolved).swift */; };
-		BF4F21F22980BE4F0072DB5C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4F21F12980BE4F0072DB5C /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -118,7 +117,7 @@
 		BF42B9FD2963B6F10078CDF5 /* 11724.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11724.swift; sourceTree = "<group>"; };
 		BF45CBE928F189DE00CD5543 /* 11066.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11066.swift; sourceTree = "<group>"; };
 		BF4F21EF2980B98F0072DB5C /* 1261.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1261.swift; sourceTree = "<group>"; };
-		BF4F21F12980BE4F0072DB5C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BF4F21F12980BE4F0072DB5C /* 3055.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3055.swift; sourceTree = "<group>"; };
 		BF51CABD295E7A17002219AD /* 17404.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17404.swift; sourceTree = "<group>"; };
 		BF51CAC229603B3A002219AD /* 2920.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2920.swift; sourceTree = "<group>"; };
 		BF5590552823ECD2008F317E /* 18258(TimeOverUnsolvable).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "18258(TimeOverUnsolvable).swift"; sourceTree = "<group>"; };
@@ -629,7 +628,7 @@
 				BF42B9FD2963B6F10078CDF5 /* 11724.swift */,
 				BF6D75F12967A72D006EA5B6 /* 14502.swift */,
 				BF6D75FC296918DB006EA5B6 /* 16953.swift */,
-				BF4F21F12980BE4F0072DB5C /* main.swift */,
+				BF4F21F12980BE4F0072DB5C /* 3055.swift */,
 				BFE2EDF0296CE903006308FE /* 2668.swift */,
 				BF4F21EF2980B98F0072DB5C /* 1261.swift */,
 				BF74E79C29738EFF00235B3B /* 2056.swift */,
@@ -1080,7 +1079,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF4F21F22980BE4F0072DB5C /* main.swift in Sources */,
 				BF32D41C27E1DE8300AB23F2 /* 4948 (unsolved).swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
