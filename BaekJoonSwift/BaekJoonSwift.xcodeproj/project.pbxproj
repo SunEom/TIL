@@ -121,6 +121,7 @@
 		BF4F21F3298361EF0072DB5C /* 1958.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1958.swift; sourceTree = "<group>"; };
 		BF4F21F5298363C40072DB5C /* 4811.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4811.swift; sourceTree = "<group>"; };
 		BF4F21F72983703D0072DB5C /* 2252.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2252.swift; sourceTree = "<group>"; };
+		BF4F21F929857C580072DB5C /* 2589.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2589.swift; sourceTree = "<group>"; };
 		BF51CABD295E7A17002219AD /* 17404.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17404.swift; sourceTree = "<group>"; };
 		BF51CAC229603B3A002219AD /* 2920.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2920.swift; sourceTree = "<group>"; };
 		BF5590552823ECD2008F317E /* 18258(TimeOverUnsolvable).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "18258(TimeOverUnsolvable).swift"; sourceTree = "<group>"; };
@@ -604,6 +605,7 @@
 			children = (
 				BF4F21F72983703D0072DB5C /* 2252.swift */,
 				BF7C04D32843431C00D10EB2 /* 2178.swift */,
+				BF4F21F929857C580072DB5C /* 2589.swift */,
 				BF2B4ACC296A95ED00EC216C /* 1743.swift */,
 				BFE51028296E3A93006CD786 /* 1707.swift */,
 				BFAA5BD12845C19F002EF510 /* 24480.swift */,
