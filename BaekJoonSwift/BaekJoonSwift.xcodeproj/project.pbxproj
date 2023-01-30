@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BF32D41C27E1DE8300AB23F2 /* 4948 (unsolved).swift in Sources */ = {isa = PBXBuildFile; fileRef = BF32D41B27E1DE8300AB23F2 /* 4948 (unsolved).swift */; };
+		BF4F21FE2987616D0072DB5C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4F21FD2987616D0072DB5C /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -122,6 +123,7 @@
 		BF4F21F5298363C40072DB5C /* 4811.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4811.swift; sourceTree = "<group>"; };
 		BF4F21F72983703D0072DB5C /* 2252.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2252.swift; sourceTree = "<group>"; };
 		BF4F21F929857C580072DB5C /* 2589.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2589.swift; sourceTree = "<group>"; };
+		BF4F21FD2987616D0072DB5C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		BF51CABD295E7A17002219AD /* 17404.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17404.swift; sourceTree = "<group>"; };
 		BF51CAC229603B3A002219AD /* 2920.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2920.swift; sourceTree = "<group>"; };
 		BF5590552823ECD2008F317E /* 18258(TimeOverUnsolvable).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "18258(TimeOverUnsolvable).swift"; sourceTree = "<group>"; };
@@ -613,6 +615,7 @@
 				BF6D75F32967AD17006EA5B6 /* 2468.swift */,
 				BF23D9A82974E82F00DE0942 /* 2636.swift */,
 				BFAA5BD32845C4AD002EF510 /* 24444.swift */,
+				BF4F21FD2987616D0072DB5C /* main.swift */,
 				BFB9B90129592D7900FC738A /* 2644.swift */,
 				BF2B4ACE296BB65600EC216C /* 2660.swift */,
 				BF2B5F61285CE06B0041E1F3 /* 7562.swift */,
@@ -1087,6 +1090,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF4F21FE2987616D0072DB5C /* main.swift in Sources */,
 				BF32D41C27E1DE8300AB23F2 /* 4948 (unsolved).swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
