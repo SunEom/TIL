@@ -1,43 +1,45 @@
-// 1937 욕심쟁이 판다
+// 1495 기타리스트
 
-let N = Int(readLine()!)!
-var arr = [[Int]]()
+import Foundation
 
-for _ in 0..<N {
-    arr.append(readLine()!.split(separator: " ").map{ Int(String($0))! })
-}
+let input = readLine()!.split(separator: " ").map { Int(String($0))! }
+let N = input[0]
+let S = input[1]
+let M = input[2]
+let volumes = readLine()!.split(separator: " ").map { Int(String($0))! }
+var dp = Array(repeating: Array(repeating: false, count: M+1), count: N+1) //dp[i][j] = i번 째의 볼륨이 j일 때의 최대 값
 
-var dp = Array(repeating: Array(repeating: 0, count: N), count: N)
-var result = 0
+dp[0][S] = true;
 
-func dfs(_ sr: Int, _ sc: Int) -> Int {
-    
-    if dp[sr][sc] != 0 {
-        return dp[sr][sc]
-    }
-    
-    dp[sr][sc] = 1
-    
-    let direction = [(1,0),(0,1),(-1,0),(0,-1)]
-    
-    for d in direction {
-        let r = sr+d.0
-        let c = sc+d.1
-        
-        if (0..<N).contains(r) && (0..<N).contains(c) {
-            if arr[sr][sc] < arr[r][c] {
-                dp[sr][sc] = max(dp[sr][sc], 1+dfs(r, c))
-            }
+for i in 1...N {
+
+    for j in 0...M {
+
+        if (!dp[i - 1][j]) {
+            continue;
         }
+
+        if (j - volumes[i-1] >= 0) {
+            dp[i][j - volumes[i-1]] = true;
+        }
+
+        if (j + volumes[i-1] <= M) {
+            dp[i][j + volumes[i-1]] = true;
+        }
+
     }
-    
-    return dp[sr][sc]
+
 }
 
-for i in 0..<N {
-    for j in 0..<N {
-        result = max(result, dfs(i, j))
+var solvable = false
+for i in stride(from: M, through: 0, by: -1) {
+    if dp[N][i] {
+        print(i)
+        solvable = true
+        break
     }
 }
 
-print(result)
+if !solvable {
+    print(-1)
+}
