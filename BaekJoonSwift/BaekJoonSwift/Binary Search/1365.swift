@@ -1,4 +1,4 @@
-// 2352 반도체 설계
+// 1365 꼬인 전깃줄
 
 import Foundation
 
@@ -19,4 +19,4 @@ for i in 1..<arr.count {
     }
 }
 
-print(queue.count)
+print(N - queue.count)
