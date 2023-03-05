@@ -74,6 +74,7 @@
 		BF23DAC429B18822002F7995 /* 2688.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2688.swift; sourceTree = "<group>"; };
 		BF23DAC629B19004002F7995 /* 18353.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 18353.swift; sourceTree = "<group>"; };
 		BF23DACF29B2DF6E002F7995 /* 4803.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4803.swift; sourceTree = "<group>"; };
+		BF23DAD329B4549E002F7995 /* 6497.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 6497.swift; sourceTree = "<group>"; };
 		BF285BC92925DFF200059532 /* 2618 memory over.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2618 memory over.swift"; sourceTree = "<group>"; };
 		BF285BCB2929B9A100059532 /* 14003.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14003.swift; sourceTree = "<group>"; };
 		BF285BCD292A6BCB00059532 /* 11780.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11780.swift; sourceTree = "<group>"; };
@@ -1060,6 +1061,7 @@
 				BFD2754C286F41F900B0376E /* 9372.swift */,
 				BF6C4CDD291CA5D200755ACF /* 1197.swift */,
 				BF023E9B291B41F600768888 /* 4386.swift */,
+				BF23DAD329B4549E002F7995 /* 6497.swift */,
 			);
 			path = "Minimum Spanning Tree";
 			sourceTree = "<group>";
