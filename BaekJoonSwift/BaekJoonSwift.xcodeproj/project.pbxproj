@@ -287,6 +287,7 @@
 		BF9C3FCC27DF4F72005711D7 /* 2775.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2775.swift; sourceTree = "<group>"; };
 		BF9C3FCE27DF9A45005711D7 /* 2839.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2839.swift; sourceTree = "<group>"; };
 		BF9C3FD027DF9D83005711D7 /* 10757 (unsolved).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "10757 (unsolved).swift"; sourceTree = "<group>"; };
+		BF9CDA6529E656C4009B0B87 /* 10810.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10810.swift; sourceTree = "<group>"; };
 		BF9D315F27F575A4004386F9 /* 9184.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9184.swift; sourceTree = "<group>"; };
 		BF9D316127F5CBE2004386F9 /* 1904.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1904.swift; sourceTree = "<group>"; };
 		BF9D316327F5CE44004386F9 /* 9461.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9461.swift; sourceTree = "<group>"; };
@@ -1035,6 +1036,7 @@
 				BFCE3DED27DA28AC004B1058 /* 4344.swift */,
 				BFDDC58229098E520090B34D /* 10807.swift */,
 				BFDDC586290B688E0090B34D /* 5597.swift */,
+				BF9CDA6529E656C4009B0B87 /* 10810.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -1148,7 +1150,7 @@
 				TargetAttributes = {
 					BF96D90D27D60A9A004DBBAF = {
 						CreatedOnToolsVersion = 13.2.1;
-						LastSwiftMigration = 1420;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
