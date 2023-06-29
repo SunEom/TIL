@@ -51,6 +51,9 @@
 		BF0FCE992A4BCD320052B49C /* 24723.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 24723.swift; sourceTree = "<group>"; };
 		BF0FCE9C2A4BCF6C0052B49C /* 25192.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 25192.swift; sourceTree = "<group>"; };
 		BF0FCE9E2A4BD0A00052B49C /* 26069.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 26069.swift; sourceTree = "<group>"; };
+		BF0FCEA02A4C3AEA0052B49C /* 20920.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20920.swift; sourceTree = "<group>"; };
+		BF0FCEA32A4C3D860052B49C /* 27433.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 27433.swift; sourceTree = "<group>"; };
+		BF0FCEA52A4C3EE00052B49C /* 4779.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4779.swift; sourceTree = "<group>"; };
 		BF12006527E574BA00F9BF98 /* 2798.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2798.swift; sourceTree = "<group>"; };
 		BF12006727E82E3700F9BF98 /* 2231.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2231.swift; sourceTree = "<group>"; };
 		BF12006927E98E7100F9BF98 /* 7568.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 7568.swift; sourceTree = "<group>"; };
@@ -458,6 +461,7 @@
 			isa = PBXGroup;
 			children = (
 				BF0FCE9C2A4BCF6C0052B49C /* 25192.swift */,
+				BF0FCEA02A4C3AEA0052B49C /* 20920.swift */,
 				BF0FCE9E2A4BD0A00052B49C /* 26069.swift */,
 			);
 			path = Intensification;
@@ -940,12 +944,14 @@
 			isa = PBXGroup;
 			children = (
 				BFAB5C4427E38D3F00F83289 /* 10872.swift */,
+				BF0FCEA52A4C3EE00052B49C /* 4779.swift */,
 				BFAB5C4627E38E0900F83289 /* 10870.swift */,
 				BF1FFA4B28CD70380016E0EC /* 24060.swift */,
 				BFA47ABC28476BE300BF283F /* 17478.swift */,
 				BFAB5C4827E38E9800F83289 /* 2447 (unsolved).swift */,
 				BFAB5C4A27E392EE00F83289 /* 11729.swift */,
 				BF09E35528CC502D00B12DD1 /* 25501.swift */,
+				BF0FCEA32A4C3D860052B49C /* 27433.swift */,
 			);
 			path = "Recursive (1)";
 			sourceTree = "<group>";
