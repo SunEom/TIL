@@ -55,6 +55,11 @@
 		BF0FCEA32A4C3D860052B49C /* 27433.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 27433.swift; sourceTree = "<group>"; };
 		BF0FCEA52A4C3EE00052B49C /* 4779.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4779.swift; sourceTree = "<group>"; };
 		BF0FCEA72A4EAFFC0052B49C /* 24060.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 24060.swift; sourceTree = "<group>"; };
+		BF0FCEAB2A52B7F70052B49C /* 2217.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2217.swift; sourceTree = "<group>"; };
+		BF0FCEAD2A52BDDA0052B49C /* 1789.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1789.swift; sourceTree = "<group>"; };
+		BF0FCEAF2A52C1210052B49C /* 10162.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10162.swift; sourceTree = "<group>"; };
+		BF0FCEB12A52C3550052B49C /* 10610.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10610.swift; sourceTree = "<group>"; };
+		BF0FCEB32A52D5620052B49C /* 1715.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1715.swift; sourceTree = "<group>"; };
 		BF12006527E574BA00F9BF98 /* 2798.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2798.swift; sourceTree = "<group>"; };
 		BF12006727E82E3700F9BF98 /* 2231.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2231.swift; sourceTree = "<group>"; };
 		BF12006927E98E7100F9BF98 /* 7568.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 7568.swift; sourceTree = "<group>"; };
@@ -584,6 +589,11 @@
 				BFFE4C122802354500D40BB1 /* 11399.swift */,
 				BFFE4C142802363600D40BB1 /* 1541.swift */,
 				BFCCECF5281D1A2C001B3EB6 /* 13305.swift */,
+				BF0FCEAB2A52B7F70052B49C /* 2217.swift */,
+				BF0FCEB12A52C3550052B49C /* 10610.swift */,
+				BF0FCEB32A52D5620052B49C /* 1715.swift */,
+				BF0FCEAF2A52C1210052B49C /* 10162.swift */,
+				BF0FCEAD2A52BDDA0052B49C /* 1789.swift */,
 			);
 			path = Greedy;
 			sourceTree = "<group>";
@@ -837,8 +847,8 @@
 				BF3B35BA290450A8007EBABC /* Tree & DP */,
 				BF7D024928EEDF4C0066359D /* BackTracking2 */,
 				BF12AF66288266C6009B984A /* Tree */,
-				BF997A7F287D70E500242B46 /* Union Find */,
 				BFD2754B286F41E300B0376E /* Minimum Spanning Tree */,
+				BF997A7F287D70E500242B46 /* Union Find */,
 				BF2B5F6A286474EB0041E1F3 /* DP & Shortest Path */,
 				BF2B5F63285CE7640041E1F3 /* Shortest Path */,
 				BFD8B41928550337007163A7 /* Heap */,
