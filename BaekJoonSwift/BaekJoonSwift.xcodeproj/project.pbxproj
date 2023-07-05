@@ -64,6 +64,9 @@
 		BF0FCEB72A53D1810052B49C /* 1439.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1439.swift; sourceTree = "<group>"; };
 		BF0FCEB92A53D2D00052B49C /* 1339.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1339.swift; sourceTree = "<group>"; };
 		BF0FCEBB2A5448580052B49C /* 1049.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1049.swift; sourceTree = "<group>"; };
+		BF0FCEC42A55405D0052B49C /* 1744.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1744.swift; sourceTree = "<group>"; };
+		BF0FCEC62A55450F0052B49C /* 1864.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1864.swift; sourceTree = "<group>"; };
+		BF0FCEC82A55AAB10052B49C /* 1213.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1213.swift; sourceTree = "<group>"; };
 		BF12006527E574BA00F9BF98 /* 2798.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2798.swift; sourceTree = "<group>"; };
 		BF12006727E82E3700F9BF98 /* 2231.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2231.swift; sourceTree = "<group>"; };
 		BF12006927E98E7100F9BF98 /* 7568.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 7568.swift; sourceTree = "<group>"; };
@@ -592,10 +595,13 @@
 				BF33EE65280140FA00A547C4 /* 1931.swift */,
 				BFFE4C122802354500D40BB1 /* 11399.swift */,
 				BF0FCEB52A53C8990052B49C /* 1946.swift */,
+				BF0FCEC82A55AAB10052B49C /* 1213.swift */,
 				BF0FCEB72A53D1810052B49C /* 1439.swift */,
 				BF0FCEB92A53D2D00052B49C /* 1339.swift */,
 				BF0FCEBB2A5448580052B49C /* 1049.swift */,
 				BFFE4C142802363600D40BB1 /* 1541.swift */,
+				BF0FCEC42A55405D0052B49C /* 1744.swift */,
+				BF0FCEC62A55450F0052B49C /* 1864.swift */,
 				BFCCECF5281D1A2C001B3EB6 /* 13305.swift */,
 				BF0FCEAB2A52B7F70052B49C /* 2217.swift */,
 				BF0FCEB12A52C3550052B49C /* 10610.swift */,
