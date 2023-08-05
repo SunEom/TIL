@@ -1,30 +1,21 @@
-import Foundation
+// 1003 피봔치 함수
 
-var arr = [[1,0],[0,1]]
-var string = ""
+let t = Int(readLine()!)!
 
-func fibo(n : Int) {
-    if n >= 2 {
-        for i in arr.count...n {
-            arr.append([arr[i-2][0] + arr[i-1][0], arr[i-2][1] + arr[i-1][1]])
-        }
+var dp = [(1,0),(0,1)]
+
+var result = ""
+
+for _ in 0..<t {
+    let n = Int(readLine()!)!
+    
+    while dp.count <= n {
+        let a = dp[dp.count-1]
+        let b = dp[dp.count-2]
+        dp.append((a.0+b.0,a.1+b.1))
     }
+    
+    result += "\(dp[n].0) \(dp[n].1)\n"
 }
 
-let n = Int(readLine()!)!
-
-var input = [Int]()
-
-for _ in 0..<n {
-    let num = Int(readLine()!)!
-    input.append(num)
-}
-
-fibo(n: input.max()!)
-
-for item in input {
-    string += "\(arr[item][0]) \(arr[item][1])\n"
-}
-
-
-print(string)
+print(result)
