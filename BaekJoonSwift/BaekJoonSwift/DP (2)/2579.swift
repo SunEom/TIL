@@ -1,19 +1,20 @@
-import Foundation
+// 2579 계단 오르기
 
+var stair = [0]
 let n = Int(readLine()!)!
-var stair = [Int]()
+var dp = Array(repeating: 0, count: n+1)
 
 for _ in 0..<n {
     stair.append(Int(readLine()!)!)
 }
-var cache = stair
-if cache.count > 1 {
-    cache[1] += cache[0]
-    if cache.count > 2 {
-        cache[2] += max(stair[0], stair[1])
-        for i in 3..<stair.count {
-            cache[i] += max(cache[i-2], stair[i-1] + cache[i-3])
-        }
-    }
+
+dp[1] = stair[1]
+if n > 1 {
+    dp[2] = stair[1] + stair[2]
 }
-print(cache.last!)
+
+for i in stride(from: 3, through: n, by: 1) {
+    dp[i] = max(dp[i-2] + stair[i], dp[i-3] + stair[i-1] + stair[i])
+}
+
+print(dp[n])

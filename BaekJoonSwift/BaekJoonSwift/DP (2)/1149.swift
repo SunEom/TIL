@@ -1,16 +1,22 @@
+// 1149 RGB 거리
+
 import Foundation
-var cost = [[Int]]()
 
-let n = Int(readLine()!)!
+let N = Int(readLine()!)!
+var arr = [[Int]]()
+var dp = Array(repeating: Array(repeating: 0, count: 3), count: N)
 
-for _ in 0..<n {
-    cost.append(readLine()!.split(separator: " ").map { Int($0)! })
+for _ in 0..<N {
+    let temp = readLine()!.split(separator: " ").map { Int(String($0))! }
+    arr.append(temp)
 }
 
-for i in 1..<n {
-    cost[i][0] += min(cost[i-1][1], cost[i-1][2])
-    cost[i][1] += min(cost[i-1][0], cost[i-1][2])
-    cost[i][2] += min(cost[i-1][1], cost[i-1][0])
+dp[0] = arr[0]
+
+for i in stride(from: 1, to: dp.count, by: 1) {
+    dp[i][0] = min(dp[i-1][1], dp[i-1][2]) + arr[i][0]
+    dp[i][1] = min(dp[i-1][0], dp[i-1][2]) + arr[i][1]
+    dp[i][2] = min(dp[i-1][0], dp[i-1][1]) + arr[i][2]
 }
 
-print(cost[cost.count-1].min()!)
+print(dp.last!.min()!)
