@@ -1,16 +1,16 @@
-import Foundation
+// 11053 가장 긴 증가하는 부분 수열
 
 let n = Int(readLine()!)!
-var arr = readLine()!.split(separator: " ").map { Int($0)! }
-var cache = [Int]()
+let arr = readLine()!.split(separator: " ").map { Int(String($0))! }
 
-for i in 0..<n {
-    cache.append(1)
+var dp = Array(repeating: 1, count: n)
+
+for i in 1..<n {
     for j in 0..<i {
-        if arr[j] < arr[i] && cache[i] <= cache[j] {
-            cache[i] = cache[j]+1
+        if arr[i] > arr[j] {
+            dp[i] = max(dp[i], dp[j]+1)
         }
     }
 }
 
-print(cache.max()!)
+print(dp.max()!)
