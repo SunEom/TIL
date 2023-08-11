@@ -1,11 +1,15 @@
+// 1912 연속합
+
 import Foundation
 
 let n = Int(readLine()!)!
-var values = readLine()!.split(separator: " ").map { Int($0)! }
-var cache = values
+let arr = readLine()!.components(separatedBy: " ").map { Int($0)! }
+var dp = Array(repeating: 0, count: n)
 
-for i in 1..<n {
-    cache[i] = max(cache[i-1] + values[i], cache[i])
+dp[0] = arr[0]
+
+for i in stride(from: 1, to: n, by: 1) {
+    dp[i] = max(arr[i], dp[i-1]+arr[i])
 }
 
-print(cache.max()!)
+print(dp.max()!)

@@ -1,16 +1,20 @@
-import Foundation
+// 9461 파도반 수열
 
-var p = [1,1,1,2,2,3,4,5,7,9]
+let t = Int(readLine()!)!
+var dp = [0,1,1,1]
+var result = ""
 
-let n = Int(readLine()!)!
-var i = 9
-for _ in 0..<n {
-    let num = Int(readLine()!)!
+for _ in 0..<t {
+    let n = Int(readLine()!)!
     
-    while p.count < num {
-        p.append(p[i] + p[i-4])
-        i += 1
+    while dp.count <= n {
+        let lastIndex = dp.count-1
+        dp.append(dp[lastIndex-1] + dp[lastIndex-2])
     }
     
-    print(p[num-1])
+    result += "\(dp[n])\n"
 }
+
+print(result)
+
+
