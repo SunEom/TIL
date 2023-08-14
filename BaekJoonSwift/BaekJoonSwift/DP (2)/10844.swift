@@ -1,28 +1,20 @@
-import Foundation
+// 10844 쉬운 계단 수
 
-var result = 0
-var arr = [[0,1,1,1,1,1,1,1,1,1]]
+var dp = Array(repeating: Array(repeating: 0, count: 11), count: 101) // dp[i][j] : i자리 이면서 끝 자리가 j인 계산 수의 개수
 let n = Int(readLine()!)!
-var len = 1
-while arr.count != n {
-    var temp = [Int]()
-    for i in 0...9 {
-        if i == 0 {
-            temp.append(arr[len-1][1]%1000000000)
+for i in 1...9 {
+    dp[1][i] = 1
+}
+
+for i in 2...100 {
+    for j in 0...9 {
+        if j == 0 {
+            dp[i][j] = dp[i-1][j+1] % 1_000_000_000
+        } else {
+            dp[i][j] = (dp[i-1][j-1] + dp[i-1][j+1])%1_000_000_000
         }
-        else if i == 9 {
-            temp.append(arr[len-1][8]%1000000000)
-        }
-        else {
-            temp.append(((arr[len-1][i+1])%1000000000+(arr[len-1][i-1])%1000000000)%1000000000)
-        }
+        
     }
-    len += 1
-    arr.append(temp)
 }
 
-arr.last?.forEach {
-    result += ($0)%1000000000
-}
-
-print(result%1000000000)
+print(dp[n].reduce(0, +)%1_000_000_000)

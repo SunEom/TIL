@@ -1,13 +1,11 @@
-// 피보나치 수 2
+// 2748 피보나치 수2
 
-import Foundation
-
-var fibo = [0, 1]
-
+var dp = [0, 1, 1]
 let n = Int(readLine()!)!
 
-while fibo.count < n+1 {
-    fibo.append(fibo[fibo.count-1] + fibo[fibo.count-2])
+while dp.count <= n {
+    let lastIdx = dp.count-1
+    dp.append(dp[lastIdx]+dp[lastIdx-1])
 }
 
-print(fibo[n])
+print(dp[n])

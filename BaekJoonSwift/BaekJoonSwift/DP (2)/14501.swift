@@ -3,28 +3,23 @@
 import Foundation
 
 let n = Int(readLine()!)!
-var arr = [[Int]]()
-var dp = Array(repeating: 0, count: n+1)
+var tarr = [0]
+var parr = [0]
+var dp = Array(repeating: 0, count: n+2)
 
 for _ in 0..<n {
-    let t = readLine()!.split(separator: " ").map { Int(String($0))! }
-    arr.append(t)
+    let input = readLine()!.components(separatedBy: " ").map { Int($0)! }
+    tarr.append(input[0])
+    parr.append(input[1])
 }
 
-for i in 0..<arr.count {
-    
-    if i + arr[i][0] < n+1 {
-        for j in i + arr[i][0]..<n+1 {
-            dp[j] = max(dp[j], dp[i]+arr[i][1])
+
+for i in 1..<tarr.count {
+    for j in stride(from: i+tarr[i], to: dp.count, by: 1) {
+        if dp[j] < dp[i] + parr[i] {
+            dp[j] = dp[i] + parr[i]
         }
     }
-    
 }
 
-var result = 0
-
-for d in dp {
-    if d > result { result = d }
-}
-
-print(result)
+print(dp.last!)
