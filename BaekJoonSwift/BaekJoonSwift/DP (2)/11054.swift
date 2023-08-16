@@ -1,35 +1,34 @@
-import Foundation
+// 11054 가장 긴 바이토닉 부분 수열
 
 let n = Int(readLine()!)!
-var arr = readLine()!.split(separator: " ").map { Int($0)! }
-var reversedArr = [Int](arr.reversed())
-var cache1 = [Int]()
-var cache2 = [Int]()
-var result = 0
+let arr = readLine()!.split(separator: " ").map { Int(String($0))! }
+var dp = Array(repeating: 1, count: n)
 
-for i in 0..<arr.count {
-    cache1.append(1)
-    for j in 0..<i {
-        if arr[i] > arr[j] && cache1[i] <= cache1[j] {
-            cache1[i] = cache1[j]+1
+for i in stride(from: 1, to: n, by: 1) {
+    for j in stride(from: 0, to: i, by: 1){
+        if arr[i] > arr[j] {
+            dp[i] = max(dp[i], dp[j]+1)
         }
     }
 }
 
-for i in 0..<reversedArr.count {
-    cache2.append(1)
-    for j in 0..<i {
-        if reversedArr[i] > reversedArr[j] && cache2[i] <= cache2[j] {
-            cache2[i] = cache2[j]+1
+var dp2 = Array(repeating: 1, count: n)
+let reverseArr = Array(arr.reversed())
+
+for i in stride(from: 1, to: n, by: 1) {
+    for j in stride(from: 0, to: i, by: 1){
+        if reverseArr[i] > reverseArr[j] {
+            dp2[i] = max(dp2[i], dp2[j]+1)
         }
     }
 }
 
-cache2 = cache2.reversed()
+dp2.reverse()
+var result = 1
 
 for i in 0..<n {
-    if result < cache1[i] + cache2[i] {
-        result = cache1[i] + cache2[i]
+    if result < dp[i] + dp2[i] {
+        result = dp[i] + dp2[i]
     }
 }
 

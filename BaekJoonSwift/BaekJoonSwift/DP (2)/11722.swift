@@ -1,25 +1,15 @@
 // 11722 가장 긴 감소하는 부분 수열
 
-import Foundation
-
-let N = Int(readLine()!)!
+let n = Int(readLine()!)!
 let arr = readLine()!.split(separator: " ").map { Int(String($0))! }
+var dp = Array(repeating: 1, count: n)
 
-var dp = [(lastVal: Int, len: Int)]()
-var result = 1
-dp.append((arr[0], 1))
-
-for i in 1..<arr.count {
-    var t = (arr[i], 1)
-    
-    for j in 0..<i {
-        if t.0 < dp[j].0 {
-            t.1 = max(t.1, dp[j].1+1)
+for i in stride(from: 1, to: n, by: 1) {
+    for j in stride(from: 0, to: i, by: 1) {
+        if arr[i] < arr[j] {
+            dp[i] = max(dp[i], dp[j]+1)
         }
     }
-    
-    result = max(result, t.1)
-    dp.append(t)
 }
 
-print(result)
+print(dp.max()!)

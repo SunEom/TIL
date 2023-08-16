@@ -1,26 +1,15 @@
-// 11055 가장 큰 증가 부분 수열
-
-import Foundation
-
-var dp = [(last: Int, sum: Int)]()
+// 11055 가장 큰 증가하는 부분 수열
 
 let n = Int(readLine()!)!
 let arr = readLine()!.split(separator: " ").map { Int(String($0))! }
+var dp = arr
 
-dp.append((arr[0], arr[0]))
-var result = arr[0]
-
-for i in 1..<arr.count {
-    var temp = (arr[i], arr[i])
-    
-    for j in 0..<dp.count {
-        if dp[j].0 < temp.0 {
-            temp.1 = max(temp.1, dp[j].1 + temp.0)
+for i in stride(from: 1, to: n, by: 1) {
+    for j in stride(from: 0, to: i, by: 1) {
+        if arr[i] > arr[j] {
+            dp[i] = max(dp[i], dp[j] + arr[i])
         }
     }
-    
-    dp.append(temp)
-    result = max(result, temp.1)
 }
 
-print(result)
+print(dp.max()!)
